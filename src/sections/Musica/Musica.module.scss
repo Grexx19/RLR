@@ -1,0 +1,45 @@
+.musicaSection{
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    min-height: 650px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .container{
+        max-width: 1283.6px;
+        width: 89.2%;
+    }
+    .titleContent{
+        margin-left: 30px;
+    }
+    .albunes{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin-top: 71px;
+    }
+    .albunes > div{
+        width: 32.3%;
+    }
+    .img{
+        width: 100%;
+    }
+}
+@media(max-width:800px){
+    .musicaSection{
+        padding: 40px 0 0;
+        .albunes{
+            flex-direction: column;
+            width: 90%;
+            margin: 20px auto;
+            grid-gap: 20px;
+        }
+        .albunes > div{
+            width: 100%;
+        }
+    }
+}

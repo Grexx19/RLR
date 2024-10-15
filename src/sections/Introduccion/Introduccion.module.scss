@@ -1,0 +1,67 @@
+.introduccionSection{
+    background-image: url("../../assets/img/Ricardo_Lopez_Rayero_Introduccion.png");
+    min-height: 582px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    .container{
+        max-width: 660px;
+        width: 70%;
+    }
+    .contenText{
+        padding-top: 32px;
+        max-width: 634px;
+        width: 100%;
+    }
+    .enlace{
+        color: white;
+        text-decoration-line: none;
+    }
+    .contentProyectos{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 47px;
+    }
+    .imgID{
+        max-width: 182px;
+        width: 100%;
+    }
+    .imgSL{
+        max-width: 139px;
+        width: 100%;
+    }
+    .imgInt{
+        max-width: 217px;
+        width: 100%;
+    }
+}
+@media (max-width: 800px){
+    .introduccionSection{
+        min-height: 513px;
+        padding: 52px 0 0;
+        justify-content: center;
+        .container{
+            width: 95%;
+        }
+        .contentProyectos{
+            display: grid;
+            grid-template-columns: 32% 24% 28%;
+            gap: 8%;
+            max-width: 100%;
+            width: 98%;
+            margin-top: 28px;
+        }
+        .contenText{
+            padding-top: 16px;
+        }
+       
+    }
+}

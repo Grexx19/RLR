@@ -1,0 +1,66 @@
+.galeriaSection{
+    max-width: 100%;
+    width: 100%;
+
+    min-height: 857px;
+    .titleContent{
+        background-image: url(../../assets/img/Ricardo_Lopez_Rayero_Galeria.png);
+        min-height: 361px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+
+        .container{
+            width: 100%; 
+            max-width: 340px;
+            bottom: 0;
+            padding-bottom: 98px;
+            padding-top: 199px;
+        }
+    }
+    .contentGalery{
+        max-width: 1279px;
+        min-height: 900px;
+        width: 89%;
+        display: grid;
+        margin: 80px auto 0;
+        align-items: center;
+        grid-gap: 20px;
+        grid-template-columns: 28.5% 28.5% 28.5%;
+        justify-content: center;
+        justify-items: center;
+        align-content: center;
+
+
+        .img{
+            width: 100%;
+            max-width: 410px;
+            border-radius: 20px;
+        }
+
+    }
+    
+}
+@media(max-width:800px){
+    .galeriaSection{
+        min-height: 0px;
+        padding: 40px 0;
+        .titleContent{
+            min-height: 218px;
+            background-position: top;
+
+            .container{
+                padding-bottom: 20px;
+                padding-top: 82px;
+            }
+        }
+        .contentGalery{
+            min-height: 220px;
+            grid-template-columns: 98%;
+            margin: 40px auto 0;
+        }
+    }
+}

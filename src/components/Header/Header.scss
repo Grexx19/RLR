@@ -1,0 +1,56 @@
+.MuiBox-root.css-1t6c9ts{
+    justify-content: space-between;
+    flex-direction: row;
+}
+.display{
+    display: flex;    
+}
+.btn:hover {
+  background-color: #B6A6F7;
+  color: #FFFFFF;
+  transform: scale(1.05); /* Ligeramente más grande */
+  box-shadow: 0px 8px 16px rgba(119, 33, 107, 0.3);
+}
+/* Animación adicional (pulsación) */
+.btn:active {
+  transform: scale(1); /* Vuelve al tamaño original al hacer clic */
+  box-shadow: 0px 8px 8px rgba(119, 33, 107, 0.2);
+}
+.MuiContainer-root.MuiContainer-maxWidthXl.css-19r6kue-MuiContainer-root {
+  max-width: 1328px;
+  width: 92.2%;
+}
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation8.MuiPopover-paper.MuiMenu-paper.MuiMenu-paper.css-1xomo8h-MuiPaper-root-MuiPopover-paper-MuiMenu-paper {
+  padding: 12px 12px 8px;
+}
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation8.MuiPopover-paper.MuiMenu-paper.MuiMenu-paper.css-81kwad {
+  padding: 12px 8px 8px 12px;
+}
+.MuiBox-root.css-1t6c9ts {
+  max-width: 1330px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px){
+    .display{
+        display: none;
+    }
+}
+@media (min-width: 600px) {
+  .MuiToolbar-root.MuiToolbar-regular.css-1jmxzwo-MuiToolbar-root {
+      max-width: 1304px;
+      width: 94%;
+      margin: auto;
+  }
+  .contacto-grid.MuiBox-root.css-1guk29{
+    width: 100%;
+    max-width: 395px;
+    justify-content: space-between;
+  }
+  .redes{
+    width: 100%;
+    max-width: 116px;
+    justify-content: space-between;
+  }
+}

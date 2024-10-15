@@ -1,0 +1,267 @@
+
+.commonRoboto{
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 156%;
+  text-align: left;
+  margin: 0px;
+  max-width: auto;
+  width: auto;
+  padding: auto;
+}
+.AboveTitleP{
+  @extend .commonRoboto;
+  letter-spacing: 7.5px;
+  color: #FFFFFF;
+  font-size: 12px;
+}
+.AboveTitle{
+  @extend .commonRoboto;
+  letter-spacing: 7.5px;
+  color: #232E35;
+  font-size: 12px;
+}
+.descriptionRobotoP{
+  @extend .commonRoboto;
+  color: #FFFFFF;
+  font-size:18px;
+  font-weight: 500;
+}
+.descriptionRoboto{
+  @extend .commonRoboto;
+  color: #595959;
+  font-size:16px;
+}
+.titleRoboto{
+  @extend .commonRoboto;
+  color: #232E35;
+  font-size:26px;
+}
+.footerRoboto{
+  @extend .commonRoboto;
+  color: #585DCC;
+  font-size:14px;
+}
+.robotoItalic{
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 156%;
+  text-align: center;
+  margin: 0px;
+  max-width: auto;
+  width: auto;
+  padding: 15px 2px 21px 2px;
+  color: #FFFFFF;
+  font-size: 22px;
+}
+.autorRoboto{
+  @extend .robotoItalic;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.commonSans{
+  font-family:"Red Hat Display", sans-serif;
+  font-style: normal;
+  line-height: 136%;
+  text-align: left;
+  margin: 0px;
+  max-width: auto;
+  width: auto;
+  padding: auto;
+}
+.HeaderSans{
+  @extend .commonSans;
+  color: #585DCC;
+  font-size:16px;
+  font-weight:400;
+}
+.nameSans{
+  color: #9DA2EF;
+  font-size:48px;
+  font-weight:700;
+  padding-bottom: 18px;
+  @extend .commonSans;
+}
+.textSans{
+  @extend .commonSans;
+    color: #FFFFFF;
+    font-size:20px;
+    font-weight:500;
+    -webkit-user-modify: read-write-plaintext-only;
+}
+.contentSans{
+  @extend .textSans;
+    color: #FFFFFF;
+    font-size:20px;
+    font-weight:400;
+    text-align: center;
+    -webkit-user-modify: read-write-plaintext-only;
+}
+
+.titleSans{
+  @extend .commonSans;
+    color: #232E35;
+    font-size:40px;
+    font-weight:600;
+}
+.sans24Bold{
+  @extend .titleSans;
+    color: #232E35;
+    font-size:24px;
+    font-weight:600;
+    text-align: center;
+    width: 100%;
+    padding-top: 20px;
+}
+.fraseSans{
+  @extend .commonSans;
+    color: #fff;
+    font-size:30px;
+    font-weight:100;
+    text-align: center
+}
+.subtitleSansSelected{
+  @extend .commonSans;
+    color: #585DCC;
+    font-size:16px;
+    font-weight:500;
+}
+.subtitleSans{
+  @extend .commonSans;
+  color: #8c8c8c;
+  font-size:16px;
+  font-weight:400;
+}
+.boldSans{
+  @extend .commonSans;
+  color: #fff;
+  font-size:32px;
+  font-weight:600;
+  text-align: center
+}
+
+.propositoSans{
+  @extend .commonSans;
+  color: #FFFFFF;
+  font-size:48px;
+  font-weight:600;
+}
+.garantiaSans{
+  @extend .commonSans;
+  color: #FFFFFF;
+  font-size:30px;
+  text-align: center;
+  font-weight:400;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.propositoSansCenter{
+  @extend .propositoSans;
+  text-align: center
+}
+.btn{
+  background-color: #585DCC;
+  border-radius: 8px;
+  border: none;
+  padding: 16px 24px;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 400;
+  color: white;
+}
+.btn:hover {
+  background-color: #9DA2EF; /* Cambia el color de fondo al hacer hover */
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: all 0.3s ease; /* Agrega una transición suave */
+}
+
+.customSelect {
+  // Estilos específicos para el select
+  background-color: #ffffff;
+  border: none;
+  padding: 8px;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  color: #585DCC;
+}
+
+.littleLine{
+  min-height: 2px; max-height: 2px;
+  min-width: 16px;
+  background-color: #9DA2EF;
+}
+.littleLineWhite{
+  @extend .littleLine;
+  background-color: #FFFFFF;
+}
+.littleLinePurple{
+  @extend .littleLine;
+  background-color: #585DCC;
+}
+
+
+.columnsAboveTitle{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  grid-gap: 16px;
+  padding-bottom: 18px;
+}
+.columnsAboveTitleCenter{
+  @extend .columnsAboveTitle;
+  justify-content: center;
+}
+strong {
+  font-weight: bold !important;
+}
+@media(max-width:900px){
+  .nameSans{
+    font-size:32px;
+    padding-bottom: 8px;
+  }
+  .AboveTitleP{
+    font-size: 10px;
+  }
+  .textSans{
+    font-size: 14px;
+  }
+  .descriptionRobotoP{
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .AboveTitle{
+    font-size: 10px;
+  }
+  .descriptionRoboto{
+    font-size: 14px;
+  }
+  .robotoItalic{
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .fraseSans{
+    font-size: 16px;
+  }
+  .sans24Bold{
+    font-size: 20px;
+    padding-top: 0px;
+  }
+  .titleRoboto{
+    font-size: 20px;
+  }
+  .garantiaSans{
+    font-size: 18px;
+    padding-top: 60px;
+  }
+  .boldSans{
+    font-size: 20px
+  }
+  .footerRoboto{
+    font-size: 12px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,102 @@
+.footerSection{
+    background-color: #fff;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0 0 2px rgba(0, 0, 0, 0.2); /* Sombra oscura */
+
+    .contentBox{
+        width: 100%;
+        max-width: 100%;
+        background-color: #FBFBFB;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container1{
+        min-height: 260px;
+        max-width: 1191px;
+        width: 82.7%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 53px;
+
+
+        .columnsRedes{
+            display: grid;
+            max-width: 308.3px;
+            width: 85.8%;
+            grid-template-columns: 20% 20% 20% 20% 20%;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+            margin: 26px;
+        }
+        .img{
+            max-width: 509px;
+            width: 83%;
+        }
+        .svgicons{
+            width: 31px;
+        }
+        .svgiconYT{
+            width: 33px;
+        }
+        .svgiconTT{
+            width: 34px;
+        }
+    }
+    .container2{
+        min-height: 67px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1191px;
+        width: 82.7%;
+        
+
+        .enlace{
+            color: #585DCC;
+        }
+
+    }   
+
+}
+@media(max-width: 900px){
+   .footerSection{
+    box-shadow: none;
+    .container1{
+        min-height: 100px;
+        width: 90%;
+        padding: 43px 0 15px;
+        .img{
+            width: 86%;
+        }
+        .columnsRedes{
+            width: 60%;
+        }
+        .svgicons{
+            width: 22px;
+        }
+        .svgiconYT{
+            width: 24px;
+        }
+        .svgiconTT{
+            width: 25px;
+        }
+    }
+    .container2{
+        flex-direction: column;
+        padding: 20px 0;
+        width: 90%;
+    }
+   }
+}

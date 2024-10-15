@@ -1,0 +1,233 @@
+.biography-section {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1270px;
+    width: 97%;
+
+    .display-desktop{
+        display: block;
+    }
+    .display-mobile{
+        display: none;
+    }
+    .paragraph-container{
+        display: flex;
+        flex-direction: column;
+        align-items: unset;
+        justify-content: center;
+        background-color: #fff;
+        padding: 30px 32px;
+        margin-bottom: 23px;
+        border-radius: 20px;
+        -webkit-box-shadow: 2px 10px 22px -8px rgba(0,0,0,0.07);
+        -moz-box-shadow: 2px 10px 22px -8px rgba(0,0,0,0.07);
+        box-shadow: 2px 10px 22px -8px rgba(0,0,0,0.07);
+    }
+  
+    .sidebar-menu {
+      max-width: 280px;
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-start;
+  
+      .menu-item {
+        background: none;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 18px;
+        text-align: left;
+        color: #555;
+        width: 100%;
+        font-family: 'Red Hat Display', sans-serif;
+        font-size: 16px;
+        line-height: 1.3em;
+  
+        &.active {
+          color: #585DCC; /* Blue color for active state */
+          font-weight: bold;
+          padding: 14px 32px;
+          border-radius: 4px;
+          -webkit-box-shadow: 10px 10px 49px 29px rgba(0,0,0,0.03);
+          -moz-box-shadow: 10px 10px 49px 29px rgba(0,0,0,0.03);
+          box-shadow: 10px 10px 49px 29px rgba(0,0,0,0.03);
+          border: 1px solid #6762621f;
+        
+        }
+  
+        &:hover {
+          color: #585DCC;
+        }
+        .angle{
+            display: none;
+        }
+        &.active .angle{
+            display: block;
+            float: right;
+        }
+        .icon{
+            margin: 0 10px -5px 0;
+        }
+        .iconGray{
+            display: inline;
+            width: 23px;
+            margin: 0 10px -5px 0;
+        }
+        &.active .iconGray{
+            display: none;
+        }
+        &:hover .iconGray{
+            display: none;
+        }
+        .iconPurple{
+            display: none;
+        }
+        &.active .iconPurple{
+            display: inline;
+            width: 23px;
+            margin: 0 10px -5px 0;
+        }
+        &:hover .iconPurple{
+            display: inline;
+            width: 23px;
+            margin: 0 10px -5px 0;
+        }
+      }
+    }
+  
+    .content-area {
+      flex: 1;
+      padding: 20px;
+      position: relative;
+      max-width: 871px;
+      width: 70%;
+  
+      .content-box {
+        max-height: 728px; /* Set your height limit */
+        overflow-y: auto; /* Enable vertical scroll */
+        padding-right: 40px;
+  
+        /* Customize scrollbar */
+        &::-webkit-scrollbar {
+          width: 8px;
+        }
+  
+        &::-webkit-scrollbar-thumb {
+          background-color: #585DCC; /* Purple scrollbar */
+          border-radius: 4px;
+        }
+  
+        .image-gallery {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 27px;
+          margin-bottom: 64px;
+          
+          img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+          }
+        }
+  
+        .content-text {
+          font-size: 16px;
+          line-height: 1.6;
+          color: #333;
+        }
+      }
+    }
+}  
+@media(max-width: 900px){
+    .biography-section{
+        .icondownload{
+            font-size: 13px;
+        }
+        .paragraph-container{
+            padding: 15px;
+        }
+        .display-desktop{
+            display: none;
+        }
+        .display-mobile{
+            display: block;
+        }
+        .sidebar-menu{
+            width: 34%;
+            margin-top: -63px;
+            .menu-item{
+                font-size: 10px;
+                padding: 6px;
+                .icon{
+                    width: 18px;
+                    margin: 0px 6px -8px 0;
+                }
+                &.active{
+                    padding: 7px 9px;
+                    
+                }
+                &.active .iconPurple{
+                    width: 16px;
+                }
+                &:hover .iconPurple{
+                    width: 16px;
+                }
+                .iconGray{
+                    width: 16px;
+                }
+                
+                &.active .angle{
+                    width: 12px;
+                }
+            }
+        }
+        .content-area{
+            width: 64px;
+            padding: 10px;
+            .content-box{
+                padding-right: 7px;
+                max-height: 620px;
+                &::-webkit-scrollbar {
+                    width: 5px;
+                  }
+                .image-gallery{
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 17px;
+                    margin-bottom: 24px;
+                    img{
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .biography-section{
+        .sidebar-menu {
+            display: none;  // Ocultar el sidebar en pantallas pequeñas
+          }
+        
+          .content-area {
+            position: relative; // Para que las flechas se posicionen en relación al content-area
+          }
+        
+          .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+          }
+        
+          .arrow.left {
+            left: 10px;
+          }
+        
+          .arrow.right {
+            right: 10px;
+          }
+    }
+  }
+  

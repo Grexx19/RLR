@@ -1,0 +1,101 @@
+.eventosSection{
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    min-height: 1190px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-position: right top;
+    padding-top: 60px;
+
+    .titleContent{
+        width: 80%;
+        max-width: 1155px;
+    }
+
+    .container{
+        width: 95%;
+        min-height: 306px;
+        max-width: 1085px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .eventosInt{
+        display: grid;
+        grid-template-columns: 48.5% 48.50%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        grid-gap: 32px;
+        padding-top: 56px;
+        padding-bottom: 56px;
+        max-width: 100%;
+        width: 100%;
+
+        .image{
+            width: 100%;
+            max-width: 526px;
+            min-height: 391px;
+            transition: transform 0.3s ease;
+            display: flex;
+            align-items: center;
+            background-size: auto 57.7%;
+            background-position: right 34px bottom;
+            background-repeat: no-repeat;
+            background-color: #F6F6FF;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .image1{
+            @extend .image;
+            background-image: url('../../assets/img/1.png'); /* Cambiar imagen en hover */
+        }
+        .image2{
+            @extend .image;
+            background-image: url('../../assets/img/2.png'); /* Cambiar imagen en hover */
+        }
+        .image3{
+            @extend .image;
+            background-image: url('../../assets/img/3.png'); /* Cambiar imagen en hover */
+        }
+        .image4{
+            @extend .image;
+            background-image: url('../../assets/img/4.png'); /* Cambiar imagen en hover */
+        }
+    }
+    .textCont{
+        max-width: 444px;
+        width: 87.74%;
+        margin: auto;
+    }
+    strong {
+        font-weight: bold !important;
+      }
+}
+strong {
+    font-weight: bold !important;
+  }
+
+  @media(max-width: 900px){
+    .eventosSection{
+        .titleContent{
+            width: 94%;
+        }
+        .eventosInt{
+            grid-template-columns: 100%;
+            width: 88%;
+            padding-top: 38px;
+            grid-gap: 22px;
+
+            .image{
+                min-height: 242px;
+                padding: 20px 0;
+            }
+        }
+    }
+  }

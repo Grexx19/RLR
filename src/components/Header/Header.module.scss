@@ -1,0 +1,55 @@
+.header{
+
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        background-color: #FFFFFF;
+        width: auto; max-width: 1440px;
+        height: 84.46px;
+        padding: 14px;
+        margin: auto;
+
+    .content{
+        max-width: 1247px; width: 86.6%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .contentlogo{
+        max-width: 635px; width: 50.9%;
+        display: flex;
+        left: 0;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .logo{
+        max-width: 332px; width: 52.3%;
+        left: 0;
+    }
+    .menu{
+        max-width: 612px; width: 49.1%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .containerDescargables{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        grid-gap: 8px;
+    }
+    .containerRedes{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        grid-gap: 22px;
+    }
+
+}

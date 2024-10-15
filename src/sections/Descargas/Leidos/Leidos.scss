@@ -1,0 +1,14 @@
+.sectionLeidos{
+    background-image: url('../../../assets/img/libros_leidos_Ricardo_Lopez_Reyero.png');
+    background-size: contain;
+    background-position: top left;
+    background-repeat: no-repeat;
+    a{
+        text-decoration: none;
+    }
+}
+@media(max-width: 800px){
+    .sectionLeidos{
+        background-image: none; 
+    } 
+}

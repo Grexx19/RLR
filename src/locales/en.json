@@ -1,0 +1,153 @@
+{
+    "language.spanish": "Spanish",
+    "language.english": "English",
+  
+    "header.download": "Downloads",
+    "header.button": "Contact",
+  
+    "introduction.nameis": "MY NAME IS",
+    "introduction.name": "Ricardo López Reyero",
+    "introduction.abovetitle": "Engineer | Digital Consultant | INT lover",
+    "introduction.description.contenido": "I am an Industrial Engineer focused on improving processes related to digital sales, from instant communication with prospects to product or service payment.",
+    "introduction.updated": "Last updated: September 2024.",
+
+    "biografia.title":"BIOGRAPHY",
+    "biografia.subtitle":"Life",
+  
+    "biografia.inicios.title": "Beginnings",
+    "biografia.inicios.contenido": "I am the oldest son, with a brother named Mariano and a sister named Dolores. I was educated in Montessori because I was diagnosed with advanced hyperactivity as a child, and Montessori was the only school that accepted me (fortunately). I love how my mind works, seeing solutions where others see problems, capable of viewing different angles of the problem and solution simultaneously. From a young age, I knew two things: I wanted to be an engineer and I desired economic abundance, as I saw my parents working hard for money and, despite their efforts, it didn't flow sufficiently. I witnessed their dedication and felt their frustration. However, we never lacked food, education, or words of encouragement. {br}{br} In middle school, due to financial limitations, I attended Pereyra while all my friends went to Colegio Inglés. It was a tough time in my life, and I experienced bullying. I was the different one, the diligent one, the smart one, and I didn't fit in at all. {br}{br} Later on, my parents improved economically, and I joined Tec de Monterrey for high school. There, I discovered my love for technology. My dad bought me a beautiful black IBM laptop, and I had a lot of fun with it. I was able to access the school server and change the wallpaper of all computers on campus at the same time, which amused me. I also sent files, took control of computers, deleted and added files, ejected CDs, among other things. However, I exceeded the number of absences in class and was transferred to Colegio Los Ángeles. {br}{br} In high school, I remember the religion teacher who told me, 'Ricardo, don't come to class again because you make us all doubt, even me. You have a grade of 90,' which I gladly accepted. I also remember a math teacher who, for some reason, targeted me. He excluded me from class for weeks, but I still had to come to take tests on Fridays about all the material covered during the week. I answered them based on logic and consistently scored a perfect 100. Eventually, the teacher eased up and allowed me back into his class. {br}{br} I remember working every summer because my parents wanted to teach me the value of work, and they succeeded. Today, I work out of passion, discipline, and dedication. ",
+  
+    "biografia.universidad.title": "University",
+    "biografia.universidad.contenido": "In college, I returned to Tec de Monterrey to pursue the Industrial and Systems Engineering career, as I knew I needed to go to Monterrey to complete it, something I deeply desired. Two years after joining Tec, I went to Brampton, Canada, for a year of English language study. It was a fantastic time; I studied English for a while and then worked in construction during the last months. Here, I experienced earning more than I could spend. I had little time but plenty of money. {br}{br} Upon returning to Mexico, I went to Monterrey to continue college. However, while I was there, I realized I needed to change my major to fully enjoy the city's nightlife. I switched to Industrial and Systems Engineering and bought a Mac laptop, which I initially struggled with due to its differences from what I was used to. But within 15 days, I fell in love with it and wondered why I hadn't discovered it sooner. This taught me that what you know isn't always the best, and habits can be limiting. I loved studying there. I attended all my classes, read all the books from cover to cover, and graduated with honors. {br}{br} I joined groups like 'Forjadores de Negocios' and 'Enlace Empresarial,' which allowed me to attend events like conferences, business tours, and workshops. I met many successful people who shared their experiences, their businesses, and their lives. This is where my abundance mindset began. I always asked questions and received excellent answers. I remember attending a conference where the topic was how to afford a luxury car. I remember thinking, 'I have to get a luxury car so I can make payments on it.' My mindset was very different back then, as I couldn't afford it. {br}{br} I remember being at an event and being very impressed with all the successful businessmen there, thinking I was light-years away from being like them. Today, I know I'm on the right path, I know I'll be very successful, share my life with the person of my dreams, have the family I desire, and give my parents everything they deserve and want. I've shifted my mindset to gratitude, abundance, and the conviction that I will achieve whatever I set out to do. ",
+ 
+    "biografia.primerostrabajos.title": "First Jobs",
+    "biografia.primerostrabajos.content": "I returned to Torreón to finish my degree and started working with my dad in the insurance industry. I spent 18 months in insurance, working on a project called SegurosDeMexico.com that was ahead of its time by about 3 years. However, we had to abandon it because the right technology wasn't available, and the insurance field wasn't my calling. The providers we had couldn't keep up, and I learned that timing and the right partners are crucial. {br}{br} After that, I moved on to organizing massive parties, concerts, opening nightclubs and restaurants. In total, I organized 6 massive parties with over 2000 attendees each, owned 3 nightclubs, 4 restaurants, 2 concerts, and an electronic music festival in Los Cabos. During this period, I learned about business lifecycles and the importance of customer recurrence for growth and progress in life. {br}{br} Later, at the age of 30, although I had restaurants, I wasn't happy. I asked my then-girlfriend, now wife, 'What do I do with my life? I'm not happy, I'm not making progress, and I can't see the light.' Her response was elegant and simple: 'Everyone asks you for technology advice, and you gladly help them for free. Just remove the 'for free' part.' That was a pivotal moment in my life, and everything started to flow from there. {br}{br} We founded IngenieriaDigital.mx in September 2019.",
+
+    "biografia.ingenieriaDigital.title": "IngenieriaDigital.mx",
+    "biografia.ingenieriaDigital.content": "We started IngenieriaDigital.mx in 2019, and things began to pick up. Clients and contracts started coming in gradually. Every day, we learned something new – from UI/UX design, front/back-end programming, to effective marketing and communication. There was a lot of stress, not much money, but an abundance of learning. We're constantly improving our processes to make them more efficient and enhance our clients' sales. We've had clients ask us to turn off the advertising because their new warehouses were full with waiting lists. It's incredibly satisfying to see clients with elegant websites generating sales and prospects. {br} {br} We're always searching for and testing software to recommend to our clients and to make ourselves more efficient. We use the best software in the market, so we consider ourselves highly efficient in every way. {br} {br} One of the reasons we added the label 'Digital Consultants' is because we try to oversee the entire sales funnel from start to finish. We fill in any gaps we find with top providers we've come across. This ensures the highest probability of success in the project and accelerates the iteration process for improving results. And then, one day, we saw the hole we'd been searching for all along, and SuperLeads was born.",
+
+    "biografia.superLeads.title": "SuperLeads.mx",
+    "biografia.superLeads.content": "SuperLeads.mx was born because communication between companies and prospects was slow and inefficient. We created the first communication module that instantly connects the right prospect with the optimal advisor. The idea rapidly evolved because the modular system had the potential to add significant value to people's lives. We granted it independence and designated SuperLeads.mx for the educational niche. {br} {br} Without realizing it, we found ourselves managing marketing for several schools. This is a sector that always needs to be prospecting, so we decided to specialize in it and automate communication and prospect reception to increase enrollment rates. We documented everything and developed software, with very positive, measurable, and scalable outcomes for private schools. We began forming alliances to expand our presence in the niche. {br} {br} To be continued...",
+    
+    "biografia.int.title": "INT.Store",
+    "biografia.int.content": "INT began within SuperLeads.mx, but the idea grew so much that the name no longer fit. In 2023, we decided to separate the projects. {br} {br} The INT System and INT Coin emerged from the need to establish a complete business within minutes. This empowers people to create economic streams in their lives. Since it's a modular system, everyone uses what they need. Everything is instant and focused on adding maximum value at minimal cost. {br} {br} Within the first minute of creating an account, you can start receiving payments from around the world. Within 6 minutes, you can have a complete store with loaded products. Within 33 minutes, you can have a fully functional AI chatbot answering frequent questions from your prospects or customers. {br} {br} You can use your INTs instantly and with 0% commission for sending/receiving. We designed it this way to ensure that the flow moves as swiftly as possible and without complications. To send INTs, simply type the name of the business where you want to send them and send them – easy and fast. {br} {br} We came to this world to improve it as much as possible, and our way of doing that is by empowering people to create abundance in their lives with INT.",
+
+    "biografia.vida.title": "Personal Life",
+    "biografia.vida.content": "Regarding family, I am married to an amazing woman whom I admire and love – Ana Acosta. She believed in me before I believed in myself, guiding and supporting me from day one. She is a successful entrepreneur, a loving daughter, a supportive sister, and an exemplary mother. It's impossible to achieve what we are without her. She has been a key part of SuperLeads, was the first angel investor, and continues to support the project. {br} {br} I had a beautiful daughter, Galia López Acosta, on September 27, 2021. She has shown me a love I didn't know existed and has given me long-term vision. She has greatly inspired my work. Thanks to her, I delved into cryptocurrency research because I couldn't imagine giving her Mexican pesos without value for 18 years when she goes out with her friends. {br} {br} A few months ago, my daughter was diagnosed with Periventricular Leukomalacia and Epastic Hemiparesis. These are scars in her brain due to insufficient blood flow during pregnancy, affecting the language and motor function areas. We are doing everything we can to provide her with the best treatments and the best possible life. We are going through a period of uncertainty and sadness, hoping to eventually understand 'why us?'",
+
+    "biografia.conclusiones.title": "Conclusions",
+    "biografia.conclusiones.con1": "We come to improve people's lives. We are Co-Creators, and our responsibility is to leave this world better than we found it. It's necessary to find your purpose to truly improve people's lives.",
+    "biografia.conclusiones.con2": "The aim of your actions shouldn't be based on making money; it should be based on enhancing lives, which will naturally lead to financial gain. Never the other way around.",
+    "biografia.conclusiones.con3": "Everything is already created, we're just not aware of how to do it. To achieve what you want, you must desire big in order to create a void in your thoughts and force them to arrive, because the universe dislikes voids. So, if you're constantly thinking about your purpose, you enter that frequency, and with the void you've created, the right thoughts are obligated to come to achieve it.",
+    "biografia.conclusiones.con4": "We are a spiritual being with intellect living a physical experience.",
+    "biografia.conclusiones.con5": "95% of the time, we're on autopilot. That's why it's crucial to direct it. The only known method to input ideas into the subconscious is repetition as many times as you can of what you desire. As a rule, you have to write down 10 things you're thankful for every day to get into that frequency, and write down your life purpose 50 times in a notebook while listening to relaxing and enjoyable music. This will completely change your life.",
+    "biografia.conclusiones.con6": "Reading is not important, it's mandatory. Read about what you enjoy until you enjoy reading, that's the technique. Build your library, specialize in something, and become the best. Every single day, you must improve in something.",
+    "biografia.conclusiones.con7": "Your attitude towards life is very important. Always remind yourself that you're happy and grateful. You'll enjoy life much more. We take many things for granted. If you start observing everything you have, you'll realize you have a lot to be thankful for. Do this throughout the day, especially upon waking up and before sleeping.",
+    "biografia.conclusiones.con8": "Put your upcoming goals on a card that starts with 'I feel happy and grateful now that...' to stay focused. Where your attention goes, your energy flows. Direct it with that card to advance diligently. Whenever you achieve a goal, replace it with the next one. Don't set goals you know you can achieve; set much bigger goals that you don't know how to achieve. Over time, you'll figure out exactly what to do to achieve them. (Download)",
+    "biografia.conclusiones.con9": "Enjoy your family, enjoy your friends. Question everything, ask everything. Enjoy people; they are spirits with discovered or undiscovered purposes.",
+    "biografia.conclusiones.con10": "You already know what your purpose in life is. Analyze what you're incredibly passionate about, what lessons life has taught you. Analyze every important event, everything that has happened to you that you perceive as negative is simply God trying to teach you something or guide you a bit on your path. Once you find it, try to positively impact as many people as you can imagine. If your purpose doesn't make you feel a little scared and excited at the same time, it's too small.",
+    "biografia.conclusiones.con11": "Golden rule: You have to create a product or service and improve it as much as possible to make it an irresistible offer that enhances people's lives.",
+    "biografia.conclusiones.con12": "Choosing a big project in life is important; it allows you to hire more talented people. Money should NOT be a concern; you must start with what you have, with a lot of faith in what you're going to do, and focus as much as you can. Things will come at the perfect moment; you just have to be attentive and keep moving to achieve them.",
+    "biografia.conclusiones.con13": "There's no need to compete when there are so many things to improve. It's better to be in the creative plane than in the competitive plane.",
+    "biografia.conclusiones.con14": "Use technology to your advantage; don't leave it behind. It will help you get where you're going faster.",
+    "biografia.conclusiones.con15": "Have coaches who teach you and help you see life from different angles. Juan Lucas, Marcelo González, Tony Robbins, Peter Diamond, Elon Musk, Grant Cardone, Bob Proctor, Napoleon Hill, Neville, Joe Dispenza, Chopra.",
+    "biografia.conclusiones.con16": "Time is your greatest asset, even more than money. Honor it by not wasting it.",
+    "biografia.conclusiones.con17": "Be obsessive about details; perfect what you're doing as much as you can. When you write your purpose 50 times, it focuses your mind all day, and focus accelerates goal achievement.",
+    "biografia.conclusiones.con18": "Hire the best possible personnel, with the best attitude among all candidates. Knowledge can be acquired, a good attitude is harder to find.",
+    "biografia.conclusiones.con19": "There are 3 types of employees: 1) Those without a purpose. 2) Those who bought into your purpose. 3) Those who are seeking one. Your goal is for 100% of your collaborators to buy into your purpose.",
+    "biografia.conclusiones.con20": "Meditation is one of the most delightful things; it's mandatory to meditate to achieve great things and have a happy life. Meditation is being present.",
+    "biografia.conclusiones.con21": "It's okay to feel lost in life, but you must know you're in search of your purpose and not rest until you find it.",
+    "biografia.conclusiones.con22": "What you earn in money is directly proportional to your level of consciousness. Don't argue with this; instead, elevate your level of consciousness and self-confidence, and watch your income rise.",
+    "biografia.conclusiones.con23": "God, the universe, or the mastermind communicates with you in only three ways: 1) Your feelings. 2) Thoughts. 3) Experiences. You must be alert and willing to listen.",
+    "biografia.conclusiones.con24": "The question 'Why did this happen to me?' doesn't make sense. Instead, ask 'For what purpose did this happen to me?' That's the right question.",
+    "biografia.conclusiones.con25": "Being a victim is the lowest vibration of all. You only attract more tragedies, illnesses. Be thankful, smile, and love deeply.",
+    "biografia.conclusiones.con26": "People have spectacular faculties: memory, reason, perception, will, intuition, and imagination. This is what sets you apart from animals. Investigate, do exercises to improve them, and use them as much as you can.",
+    "biografia.conclusiones.con27": "Nothing is inherently good or bad; things that happen are neutral. You give meaning to what occurs—positive or negative.",
+    "biografia.conclusiones.con28": "It's easier to progress in life by healing wounds as they happen and constantly healing the past.",
+    "biografia.conclusiones.con29": "Important assets for people in the correct order: Intense desire (Purpose), imagination, thoughts (internal conversations), Faith, Perseverance, sixth sense, collaborators, time, money.",  
+    
+    "biografia.conclusiones.frasesimportantes.title": "Important Phrases:",
+    "biografia.conclusiones.frasesimportantes.primerfrase": "The day you discover you can improve your surroundings by creating, nothing remains the same. Steve Jobs",
+    "biografia.conclusiones.frasesimportantes.segundafrase": "Imagination is more important than knowledge. Albert Einstein",
+    "biografia.conclusiones.frasesimportantes.tercerafrase": "Christ in you is your imagination. Neville Goddard",
+  
+    "biografia.conclusiones.copy": "Copy",
+      
+    "eventos_int.title": "SYNCHRONICITIES",
+    "eventos_int.subtitle": "Important Events for INT",
+    "eventos_int.container1": "<strong>My grandfather Ricardo López Fuentes opened a growing investment</strong> in Banamex, a Mexican bank, when I had just been born. <strong>He invested $800,000 MXN</strong> in 1986. 36 years later, with compound interest in the bank minus fees, <strong>I received about $800 MXN</strong>. This clearly taught me that <strong>the bank's business isn't to make its customers rich; it's to make its owners rich with their customers' money.</strong>",
+    "eventos_int.container2": "<strong> When I was 9 years old, I saw my parents struggling economically</strong>, working their hardest to support the family, but <strong>they didn't have the tools to do it at the necessary speed</strong>. Starting a business and beginning to accept money takes a lot of time, and <strong>when you're in a hurry to survive, you can't afford to wait</strong>, so you get caught in a negative cycle.",
+    "eventos_int.container3": "In 2010, Banamex granted me a loan to open a restaurant. The restaurant didn't succeed, and I was left with the debt. I couldn't pay it because there simply was no way. I ended up with bad credit, which further complicated things. This taught me that the system isn't designed for people to start businesses, create jobs, and improve society. Instead, <strong>despite the system, you have to fight to achieve what you want</strong>.",
+    "eventos_int.container4": "In 2022, after a long pandemic, I had maxed out 2 credit cards and one <strong>with Santander with interest rates between 60% and 35% annually</strong>. I could pay the principal, but the interest was eating me up. I approached them to <strong>restructure the debt to reduce the interest amount, and the answer was a resounding NO</strong>. Fortunately, my wife had credit at a high but lower rate than mine, and with this, I restructured the debt. <strong>I learned that the bank doesn't care if you ask for money to pay them back; they'd rather drown you in interest than help you</strong>.",
+    "eventos_int.frase": "INT is born to empower entrepreneurs to create and grow. ",
+  
+    "proposito.title": "PURPOSE",
+    "proposito.subtitle": "Life Purpose",
+    "proposito.subtitle2": "Helping 100 million businesses improve their sales",
+    "proposito.frase": "\"We improve more lives with code than with words.\"",
+    "proposito.autor": "- Ricardo López Reyero",
+      
+    "estudios.title": "ABOUT ME",
+    "estudios.subtitle": "My Studies",
+      
+    "libros.title": "ABOUT ME",
+    "libros.subtitle": "Books That Have Improved Me",
+    "libros.button": "Download complete book list with HD recommendations",
+      
+    "documentales.title": "IMPORTANT VIDEOS",
+    "documentales.subtitle": "Impactful Documentaries",
+    "documentales.blueprint": "Bob Proctor's BluePrint {br}For Success",
+    "documentales.born": "You Were {br}Born Rich",
+    "documentales.millionaire": "You Can Become a {br}Millionaire",
+    "documentales.living": "Living From a Place of Surrender",
+      
+    "musica.title": "ABOUT ME",
+    "musica.subtitle": "Favorite Music",
+    "musica.beethoven": "Beethoven",
+    "musica.tdreams": "Tulum Dreams",
+    "musica.acdc": "AC/DC",
+          
+    "galeria.title": "GALLERY",
+    "galeria.subtitle": "Important Moments",
+      
+    "garantia.content": "The more I study, the more I realize there are levels of consciousness, and I see many levels upward. I'm excited to see how far I can reach.",
+    "garantia.autor": "- Ricardo López Reyero",
+      
+    "bottom.text": "More information at:",
+      
+    "footer.derechos": "2022. All rights reserved. Privacy Policy",
+    "footer.visitante": "Visitor: XXX",
+    "footer.madeby": "Made by {link}.",
+      
+    "common.welcome": "Welcome!",
+    "common.intro": "This is an example using react-intl.",
+
+      "downloads.hero.aboutTitle": "SECTION OF",
+      "downloads.hero.title": "Downloads",
+      "downloads.hero.description": "Some things I’ve found that I think are really worth everyone having, in order of importance.",
+  
+      "downloads.cards.title": "Goal Cards",
+      "downloads.cards.btncard": "Download HD",
+  
+      "downloads.books.title": "Books Read",
+      "downloads.books.description": "Download the full list of books I’ve read and my top recommendations. Your next great read might be here.",
+      "downloads.books.btnbooks": "Download and View",
+  
+      "downloads.marcas.title": "Brands",
+      "downloads.marcas.btn": "Download",
+  
+      "downloads.atajos.title": "Shortcuts to Abundance",
+  
+      "downloads.audios.title": "Audios",
+  
+      "downloads.videos.title": "Videos",
+  
+      "downloads.cuadros.title": "Explanatory Diagrams",
+      "downloads.cuadros.btndescarga": "Download Diagrams HD",
+  
+      "downloads.habladores.title": "Signs",
+      "downloads.habladores.btn": "Download HD",
+  
+      "downloads.bottom.frase": "If this page helped you in any way {br}The best thing you can do is share it with your loved ones"  
+  }
+  
