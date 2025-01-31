@@ -13,7 +13,7 @@ import ItemSelector from '../ItemSelector';
 import { Link, useNavigate } from 'react-router-dom';
 import { FormattedMessage } from 'react-intl';
 import YouTube from '@mui/icons-material/YouTube';
-import { Tooltip } from '@mui/material';
+const Tooltip = React.lazy(() => import('@mui/material/Tooltip'));
 
 function Header({ footerRef }) {
 
@@ -78,7 +78,18 @@ function Header({ footerRef }) {
                     </svg>
                       <FormattedMessage id="header.download" />
               </Btn>
-
+              <Btn
+                backgcolor = 'transparent'
+                varcolor = '#585DCC'
+                varpadding = '2px'
+                vardropshadow = 'none'
+                varfontsize = '12px'
+                onClick={handleMarcasClick} // Add onClick handler
+                >
+                  <FormattedMessage
+                  id="downloads.marcas.title"
+                  />
+                </Btn>
             <IconButton
               size="large"
               aria-label="account of current user"

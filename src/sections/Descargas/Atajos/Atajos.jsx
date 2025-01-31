@@ -3,7 +3,7 @@ import { Btn, ContentBox, Griditem, Gridwrapper, ImagePicture, RedHatDisplay } f
 import { FormattedMessage } from 'react-intl'
 import Download from '@mui/icons-material/Download'
 
-const Atajos = () => {
+const Atajos = ({ id }) => {
     let FormulaImg = require('../../../assets/img/Fórmula para la confianza en mí mismo.png')
     let mastermindImg = require('../../../assets/img/Directrices_del_mastermind_neville_goddard.png')
     let Formula = require('../../../assets/zips/Formula para la confianza en mi mismo.zip')
@@ -16,6 +16,7 @@ const Atajos = () => {
     vardisplay = 'flex'
     varmargin = '100px 0 120px'
     varmarginmovil = '40px 0 60px'
+    id= {id}
     >
         <RedHatDisplay
         varfontsize = '26px'
@@ -42,7 +43,7 @@ const Atajos = () => {
             <Griditem
             vardisplay = 'flex'
             >
-                <ImagePicture src={FormulaImg} varmaxwidth = '432px' varwidth = '100%' />
+                <ImagePicture src={FormulaImg} varwidth = '432px' varmaxwidth = '100%' loading='lazy' />
                 <Btn
                 varmargin = '26px 0 0'
                 backgcolor ='#9DA2EF'
@@ -64,7 +65,7 @@ const Atajos = () => {
             <Griditem
             vardisplay = 'flex'
             >
-                <ImagePicture src={mastermindImg} varmaxwidth = '432px' varwidth = '100%' />
+                <ImagePicture src={mastermindImg} varwidth = '432px' varmaxwidth = '100%' loading='lazy' />
                 <Btn
                 varmargin = '26px 0 0'
                 backgcolor ='#9DA2EF'

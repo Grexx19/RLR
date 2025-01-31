@@ -6,7 +6,7 @@ import Preview3 from "../../assets/img/Ricardo_Lopez_Rayero_Documentales_you_can
 import Preview4 from "../../assets/img/Ricardo_LOpez_Reyero_Documentales_Living_from_a_place_of_Surrender.png";
 import PlayArrow from '@mui/icons-material/PlayArrow';
 import { FormattedMessage } from 'react-intl';
-import { AccessTime } from '@mui/icons-material';
+import AccessTime from '@mui/icons-material/AccessTime';
 
 const videos = [
   {
@@ -50,10 +50,11 @@ const VideoGrid = () => {
         <div key={video.id} className={styles.videoContainer}>
           <div className={styles.videoContent}>
             <div className={styles.preview}>
-              <img src={video.previewImage} alt={`Preview ${video.id}`} />
-              <button className={styles.playButton} onClick={() => handlePlay(video.videoUrl)}>
+              <img src={video.previewImage} alt={`Preview ${video.id}`} loading='lazy' />
+              <div className={styles.playButton} onClick={() => handlePlay(video.videoUrl)}>
                 <PlayArrow sx={{ fontSize: '60px' }} />
-              </button>
+              </div>
+              
             </div>
           </div>
           <div className={styles.description}>

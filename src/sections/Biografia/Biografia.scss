@@ -126,7 +126,8 @@
           margin-bottom: 64px;
           
           img {
-            width: 100%;
+            width: 419px;
+            max-width: 100%;
             height: auto;
             border-radius: 20px;
           }
@@ -212,6 +213,15 @@
         
           .content-area {
             position: relative; // Para que las flechas se posicionen en relación al content-area
+            .content-box{
+              .image-gallery{
+                img {
+                  width: 250px;
+                  max-width: 100%;
+                  height: auto;
+                }
+              }
+            }
           }
         
           .arrow {

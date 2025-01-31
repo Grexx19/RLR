@@ -1,5 +1,4 @@
 .introduccionSection{
-    background-image: url("../../assets/img/Ricardo_Lopez_Rayero_Introduccion.png");
     min-height: 582px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -31,16 +30,16 @@
         margin-top: 47px;
     }
     .imgID{
-        max-width: 182px;
-        width: 100%;
+        width: 182px;
+        max-width: 100%;
     }
     .imgSL{
-        max-width: 139px;
-        width: 100%;
+        width: 139px;
+        max-width: 100%;
     }
     .imgInt{
-        max-width: 217px;
-        width: 100%;
+        width: 217px;
+        max-width: 100%;
     }
 }
 @media (max-width: 800px){
@@ -48,6 +47,8 @@
         min-height: 513px;
         padding: 52px 0 0;
         justify-content: center;
+        // background-image: none;
+        // background-color: #020926;
         .container{
             width: 95%;
         }

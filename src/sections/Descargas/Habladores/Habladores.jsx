@@ -15,7 +15,7 @@ import urlBtn5 from '../../../assets/img/habladores_soy_el_guardian_de_mi_tiempo
 import urlBtn6 from '../../../assets/img/habladores_soy_el_guardian_de_mi_tiempo_ricardo_lopez_reyero.png';
 import urlBtn7 from '../../../assets/img/habladores_do_the_hard_thing_ricardo_lopez_reyero.png';
 import { FormattedMessage } from 'react-intl';
-import { Download } from '@mui/icons-material';
+import Download from '@mui/icons-material/Download';
 
 const images = [
   {
@@ -54,9 +54,10 @@ const images = [
     urlBtn: urlBtn7,
   },
 ]
-const Habladores = () => {
+const Habladores = ({ id }) => {
   return (
     <ContentBox
+    id={id}
     varmaxwidth = '1440px'
     varwidth = '100%'
     vardisplay = 'flex'
@@ -87,7 +88,7 @@ const Habladores = () => {
       >
         {images.map((image) => (
           <Griditem key={image.id} vardisplayMovil ='flex'>
-            <ImagePicture src={image.imgAudio} varmaxwidth = '327px' varwidth= '100%' />
+            <ImagePicture src={image.imgAudio} varwidth = '327px' varmaxwidth= '100%' loading='lazy' />
             <Btn
             varmargin = '21px 0 0'
             backgcolor ='#9DA2EF'

@@ -1,9 +1,9 @@
 import React from 'react'
 import { ContentBox, ImagePicture, RedHatDisplay, Btn } from '../../../components/Styled'
 import { FormattedMessage } from 'react-intl'
-import { Download } from '@mui/icons-material'
+import Download from '@mui/icons-material/Download'
 
-const Cuadros = () => {
+const Cuadros = ({ id }) => {
   let Deseaengrande = require('../../../assets/img/Piensa_en_grande_persevera_agradece.png')
   let cuadro2 = require('../../../assets/img/cuadro2.png')
   let cuadro3 = require('../../../assets/img/Mismo_lugar_diferente_perspectiva.png')
@@ -17,6 +17,7 @@ const Cuadros = () => {
 
   return (
     <ContentBox
+    id={id}
     varmaxwidth = '1440px'
     varwidth = '100%'
     vardisplay = 'flex'
@@ -41,15 +42,15 @@ const Cuadros = () => {
       varmaxwidth = '1168px'
       varwidth = '100%'
       >
-        <ImagePicture src={Deseaengrande} varmaxwidth= '1161px' varwidth= '100%' varmargin='57px 0 0px' varmarginmovil='32px 0 0' alt='Desea en grande_persevers_agradece'/>
-        <ImagePicture src={cuadro2} varmaxwidth= '1161px' varwidth= '100%' varmargin='69px 0 0'  varmarginmovil='22px 0 0' alt='Eres_mucho_mas_inteligente_de_lo_que_crees'/>
-        <ImagePicture src={cuadro3} varmaxwidth= '1161px' varwidth= '100%' varmargin='69px 0 0' varmarginmovil='22px 0 0' alt='mismo_lugar_diferente_perspectiva'/>
-        <ImagePicture src={cuadro4} varmaxwidth= '1161px' varwidth= '100%' varmargin='69px 0 0' varmarginmovil='22px 0 0' alt='haz_mas_de_lo_que_ves'/>
-        <ImagePicture src={cuadro5} varmaxwidth= '1161px' varwidth= '100%' varmargin='69px 0 0' varmarginmovil='22px 0 0' alt='mapa_espiritual_fisico'/>
-        <ImagePicture src={cuadro6} varmaxwidth= '1161px' varwidth= '100%' varmargin='69px 0 0' varmarginmovil='22px 0 0' alt='mapa_niveles_de_conciencia'/>
-        <ImagePicture src={cuadro7} varmaxwidth= '1161px' varwidth= '100%' varmargin='69px 0 0' varmarginmovil='22px 0 0' alt='mapa_activos_del_ser_humano'/>
-        <ImagePicture src={cuadro8} varmaxwidth= '1161px' varwidth= '100%' varmargin='69px 0 0' varmarginmovil='22px 0 0' alt='mapa_int'/>
-        <ImagePicture src={cuadro9} varmaxwidth= '1161px' varwidth= '100%' varmargin='69px 0 0' varmarginmovil='22px 0 0' alt='mapa_int'/>
+        <ImagePicture src={Deseaengrande} varwidth= '1161px' varmaxwidth= '100%' varmargin='57px 0 0px' varmarginmovil='32px 0 0' alt='Desea en grande_persevers_agradece' loading='lazy'/>
+        <ImagePicture src={cuadro2} varwidth= '1161px' varmaxwidth= '100%' varmargin='69px 0 0'  varmarginmovil='22px 0 0' alt='Eres_mucho_mas_inteligente_de_lo_que_crees' loading='lazy'/>
+        <ImagePicture src={cuadro3} varwidth= '1161px' varmaxwidth= '100%' varmargin='69px 0 0' varmarginmovil='22px 0 0' alt='mismo_lugar_diferente_perspectiva' loading='lazy'/>
+        <ImagePicture src={cuadro4} varwidth= '1161px' varmaxwidth= '100%' varmargin='69px 0 0' varmarginmovil='22px 0 0' alt='haz_mas_de_lo_que_ves' loading='lazy'/>
+        <ImagePicture src={cuadro5} varwidth= '1161px' varmaxwidth= '100%' varmargin='69px 0 0' varmarginmovil='22px 0 0' alt='mapa_espiritual_fisico' loading='lazy'/>
+        <ImagePicture src={cuadro6} varwidth= '1161px' varmaxwidth= '100%' varmargin='69px 0 0' varmarginmovil='22px 0 0' alt='mapa_niveles_de_conciencia' loading='lazy'/>
+        <ImagePicture src={cuadro7} varwidth= '1161px' varmaxwidth= '100%' varmargin='69px 0 0' varmarginmovil='22px 0 0' alt='mapa_activos_del_ser_humano' loading='lazy'/>
+        <ImagePicture src={cuadro8} varwidth= '1161px' varmaxwidth= '100%' varmargin='69px 0 0' varmarginmovil='22px 0 0' alt='mapa_int' loading='lazy'/>
+        <ImagePicture src={cuadro9} varwidth= '1161px' varmaxwidth= '100%' varmargin='69px 0 0' varmarginmovil='22px 0 0' alt='mapa_int' loading='lazy'/>
       </ContentBox>
       <Btn
       varmargin = '81px 0 0'

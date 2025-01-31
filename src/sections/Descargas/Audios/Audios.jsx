@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { lazy, Suspense } from 'react'
 import { ContentBox, Griditem, Gridwrapper, ImagePicture, RedHatDisplay } from '../../../components/Styled'
 import FrecuenciaImg from '../../../assets/img/Frecuencia_296Hz_x.png';
 import ImaginationImg from '../../../assets/img/Imagination_Bob_Proctor.png';
@@ -17,87 +17,116 @@ import Audio7 from "../../../assets/Audios/Imaginacio╠ün despierta por Nevill
 import './Audios.scss'
 import { FormattedMessage } from 'react-intl';
 import 'react-h5-audio-player/lib/styles.css';
-import AudioPlayer from 'react-h5-audio-player';
+const AudioPlayer = lazy(() => import('react-h5-audio-player'));
+
 
 const audios = [
   {
     id: 1,
     audioUrl: Audio1,
     imgAudio: FrecuenciaImg,
+    title: 'Frecuencia 396Hz',
+    artist: 'x',
+    album: 'Sonidos de Frecuencia'
   },
   {
     id: 2,
     audioUrl: Audio2,
     imgAudio: ImaginationImg,
+    title: 'Imagination',
+    artist: 'Bob Proctor',
+    album: 'Desarrollo Personal'
   },
   {
     id: 3,
     audioUrl: Audio3,
     imgAudio: Thewill,
+    title: 'The Will',
+    artist: 'Bob Proctor',
+    album: 'Desarrollo Personal'
   },
   {
     id: 4,
     audioUrl: Audio4,
     imgAudio: PercepcionImg,
+    title: 'Percepcion',
+    artist: 'Bob Proctor',
+    album: 'Desarrollo Personal'
   },
   {
     id: 5,
     audioUrl: Audio5,
     imgAudio: Mundointerno,
+    title: 'Mundo Interno vs Mundo Externo',
+    artist: 'Neville Goddard',
+    album: 'Mente y Realidad'
   },
   {
     id: 6,
     audioUrl: Audio6,
     imgAudio: atusordenes,
-
+    title: 'A tus ordenes',
+    artist: 'Neville Goddard',
+    album: 'Mente y Realidad'
   },
   {
     id: 7,
     audioUrl: Audio7,
     imgAudio: imaginacionDespierta,
-  },
+    title: 'Imaginacion Despierta',
+    artist: 'Neville Goddard',
+    album: 'Mente y Realidad'
+  }
 ]
-const Audios = () => {
+
+const Audios = ({ id }) => {
+
+  const updateMediaSession = (audio) => {
+    if ('mediaSession' in navigator) {
+      navigator.mediaSession.metadata = new window.MediaMetadata({
+        title: audio.title,
+        artist: audio.artist,
+        album: audio.album,
+        artwork: [
+          { src: audio.imgAudio, sizes: '512x512', type: 'image/png' }
+        ]
+      });
+    }
+  };
+
   return (
-    <ContentBox
-    varmaxwidth = '1440px'
-    varwidth = '100%'
-    vardisplay = 'flex'
-    varpadding ='20px 0 120px'
-    >
+    <Suspense fallback={<div>Cargando...</div>}>
+    <ContentBox id={id} varmaxwidth='1440px' varwidth='100%' vardisplay='flex' varpadding='20px 0 120px'>
       <RedHatDisplay
-        varfontsize = '26px'
-        varweight = '700'
-        varcolor = '#232E35'
-        vartextalign ='left'
-        varpadding = '0px'
-        varmaxwidth = '1190px'
-        varwidth = '100%'
-        textalignmovil = 'center'
-        >
-          <FormattedMessage id='downloads.audios.title'/>
+        varfontsize='26px'
+        varweight='700'
+        varcolor='#232E35'
+        vartextalign='left'
+        varpadding='0px'
+        varmaxwidth='1190px'
+        varwidth='100%'
+        textalignmovil='center'
+      >
+        <FormattedMessage id='downloads.audios.title' />
       </RedHatDisplay>
       <Gridwrapper
-        varmaxwidth = '1204px'
-        varwidth = '100%'
-        vargridtemplatecolumns = 'repeat(3, 1fr)'
-        columnsMovil = 'repeat(2, 1fr)'
-        vargridgap = '56px 9%'
-        varmargin = '56px 0 0'
-        movilWidth ='90%'
-        gridgapTablet ='20px 20px'
-        marginMovil = '32px 0 0'
+        varmaxwidth='1204px'
+        varwidth='100%'
+        vargridtemplatecolumns='repeat(3, 1fr)'
+        columnsMovil='repeat(2, 1fr)'
+        vargridgap='56px 9%'
+        varmargin='56px 0 0'
+        movilWidth='90%'
+        gridgapTablet='20px 20px'
+        marginMovil='32px 0 0'
       >
         {audios.map((audio) => (
-          <Griditem key={audio.id} vardisplay= 'flex'>
-            <ImagePicture src={audio.imgAudio} varmaxwidth = '327px' varwidth= '100%' />
-            {/* <audio className='custom-audio' controls>
-              <source src={audio.audioUrl} type="audio/mp3" />
-              Tu navegador no soporta la reproducción de audio.
-            </audio> */}
+          <Griditem key={audio.id} vardisplay='flex'>
+            <ImagePicture src={audio.imgAudio} varwidth='327px' varmaxwidth='100%' loading='lazy' />
             <AudioPlayer
+              loading='lazy'
               src={audio.audioUrl}
-              onPlay={e => console.log("onPlay")}
+              onPlay={() => updateMediaSession(audio)}
               customAdditionalControls={[]}
               customVolumeControls={[]}
               customProgressBarSection={['CURRENT_TIME', 'PROGRESS_BAR', 'DURATION']}
@@ -109,9 +138,10 @@ const Audios = () => {
             />
           </Griditem>
         ))}
-      </Gridwrapper> 
+      </Gridwrapper>
     </ContentBox>
-  )
-}
+    </Suspense>
+  );
+};
 
-export default Audios
+export default Audios;

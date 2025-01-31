@@ -236,6 +236,8 @@ export const ImagePicture = styled.img`
   min-height: ${(props) => props.varminheight || "auto"};
   padding: ${(props) => props.varpadding || "0px"};
   display: ${(props) => props.vardisplay || "block"};
+  height: auto;
+  border-radius: ${(props) => props.varborderradius || "none"};
   
   @media (max-width: 800px){
     width: ${(props) => props.varwidthmovil || props.varminheight};

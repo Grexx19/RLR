@@ -1,31 +1,42 @@
-import React from 'react'
-import Hero from '../sections/Descargas/Hero/Hero'
-import Tarjetas from '../sections/Descargas/Tarjetas/Tarjetas'
-import { ContentBox } from '../components/Styled'
-import Leidos from '../sections/Descargas/Leidos/Leidos'
-import Atajos from '../sections/Descargas/Atajos/Atajos'
-import Audios from '../sections/Descargas/Audios/Audios'
-import Cuadros from '../sections/Descargas/Cuadros/Cuadros'
-import Habladores from '../sections/Descargas/Habladores/Habladores'
-import Bottom from '../sections/Descargas/Bottom/Bottom'
+import React, { useEffect, lazy, Suspense } from 'react';
+import { useLocation } from 'react-router-dom';
+import { ContentBox } from '../components/Styled';
+import Hero from '../sections/Descargas/Hero/Hero';
+const Tarjetas = lazy(() => import('../sections/Descargas/Tarjetas/Tarjetas'));
+const Leidos = lazy(() => import('../sections/Descargas/Leidos/Leidos'));
+const Atajos = lazy(() => import('../sections/Descargas/Atajos/Atajos'));
+const Audios = lazy(() => import('../sections/Descargas/Audios/Audios'));
+const Cuadros = lazy(() => import('../sections/Descargas/Cuadros/Cuadros'));
+const Habladores = lazy(() => import('../sections/Descargas/Habladores/Habladores'));
+const Bottom = lazy(() => import('../sections/Descargas/Bottom/Bottom'));
 
 const Descargas = () => {
-  return (
-    <ContentBox
-    varwidth = '100%'
-    varmaxwidth = '100%'
-    vardisplay = 'flex'
-    >
-        <Hero />
-        <Tarjetas />
-        <Leidos />
-        <Atajos />
-        <Audios />
-        <Cuadros />
-        <Habladores />
-        <Bottom />
-    </ContentBox>
-  )
-}
+  const location = useLocation();
 
-export default Descargas
+  useEffect(() => {
+    const hash = location.hash;
+    if (hash) {
+      const element = document.querySelector(hash);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [location]);
+
+  return (
+    <ContentBox varwidth="100%" varmaxwidth="100%" vardisplay="flex">
+      <Suspense fallback={<div>Cargando...</div>}>
+        <Hero id="hero" />
+        <Tarjetas id="tarjetas-objetivos" />
+        <Leidos id="libros-leidos" />
+        <Atajos id="atajos-para-la-abundancia" />
+        <Audios id="audios" />
+        <Cuadros id="cuadros-explicativos" />
+        <Habladores id="habladores" />
+        <Bottom id="compartir" />
+      </Suspense>
+    </ContentBox>
+  );
+};
+
+export default Descargas;

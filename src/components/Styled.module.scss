@@ -42,6 +42,7 @@
   @extend .commonRoboto;
   color: #585DCC;
   font-size:14px;
+  font-weight: 600;
 }
 .robotoItalic{
   font-family: "Roboto", sans-serif;
@@ -261,7 +262,8 @@ strong {
     font-size: 20px
   }
   .footerRoboto{
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
+    font-weight: 600;
   }
 }

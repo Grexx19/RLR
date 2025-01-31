@@ -10,8 +10,7 @@ import Garantia from '../sections/Garantia/Garantia'
 import Musica from '../sections/Musica/Musica'
 import Biografia from '../sections/Biografia/Biografia'
 
-const Home = () => {
-  return (
+const Home = React.memo(() => (
     <div>
         <Introduccion />
         <Biografia />
@@ -24,8 +23,6 @@ const Home = () => {
         <Galeria/>
         <Garantia/>
     </div>
-   
-  )
-}
+));
 
 export default Home

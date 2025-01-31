@@ -1,34 +1,33 @@
-import React, { useEffect, useState } from 'react';
+import React, { Suspense, useEffect, useState } from 'react';
 import './Biografia.scss'; // Assuming the custom styles are here.
-import inicios1 from '../../assets/img/Ricardo_Lopez_Rayero_Biografia_Vida_1.jpg';
-import inicios2 from '../../assets/img/Ricardo_Lopez_Rayero_Biografia_Vida_2.jpg';
-import inicios3 from '../../assets/img/Ricardo_Lopez_Rayero_Biografia_Vida_3.jpg';
-import inicios4 from '../../assets/img/Ricardo_Lopez_Rayero_Biografia_Vida_4.jpg';
-import inicios5 from '../../assets/img/Ricardo_Lopez_Rayero_Biografia_Vida_5.jpg';
-import inicios6 from '../../assets/img/Ricardo_Lopez_Rayero_Biografia_Vida_6.jpg';
-import universidad1 from '../../assets/img/Ricardo_Lopez_Rayero_Universidad_1.jpg'
-import universidad2 from '../../assets/img/Ricardo_Lopez_Rayero_Universidad_2.jpg'
-import universidad3 from '../../assets/img/Ricardo_Lopez_Rayero_Universidad_3.jpg'
-import trabajos1 from '../../assets/img/Ricardo_Lopez_Rayero_primeros_trabajos_1.jpg'
-import trabajos2 from '../../assets/img/Ricardo_Lopez_Rayero_primeros_trabajos_2.jpg'
-import trabajos3 from '../../assets/img/Ricardo_Lopez_Rayero_primeros_trabajos_3.jpg'
-import id1 from '../../assets/img/Ricardo_Lopez_Rayero_Ingenieria_digital_1.jpg'
-import id2 from '../../assets/img/Ricardo_Lopez_Rayero_Ingenieria_digital_2.jpg'
-import id3 from '../../assets/img/Ricardo_Lopez_Rayero_Ingenieria_digital_3.jpg'
-import sp1 from '../../assets/img/Ricardo_Lopez_Rayero_SuperLeads_1.jpg'
-import sp2 from '../../assets/img/Ricardo_Lopez_Rayero_SuperLeads_2.jpg'
-import sp3 from '../../assets/img/Ricardo_Lopez_Rayero_SuperLeads_3.jpg'
-import int1 from '../../assets/img/Ricardo_Lopez_Rayero_Int_1.jpg'
-import int2 from '../../assets/img/Ricardo_Lopez_Rayero_Int_2.jpg'
-import int3 from '../../assets/img/Ricardo_Lopez_Rayero_Int_3.jpg'
-import personal1 from '../../assets/img/Ricardo_Lopez_Rayero_Vida_personal_1.jpg'
-import personal2 from '../../assets/img/Ricardo_Lopez_Rayero_Vida_personal_2.jpg'
+import inicios1 from '../../assets/img/Ricardo_Lopez_Rayero_Biografia_Vida_1.webp';
+import inicios2 from '../../assets/img/Ricardo_Lopez_Rayero_Biografia_Vida_2.webp';
+import inicios3 from '../../assets/img/Ricardo_Lopez_Rayero_Biografia_Vida_3.webp';
+import inicios4 from '../../assets/img/Ricardo_Lopez_Rayero_Biografia_Vida_4.webp';
+import inicios5 from '../../assets/img/Ricardo_Lopez_Rayero_Biografia_Vida_5.webp';
+import inicios6 from '../../assets/img/Ricardo_Lopez_Rayero_Biografia_Vida_6.webp';
+import universidad1 from '../../assets/img/Ricardo_Lopez_Rayero_Universidad_1.webp'
+import universidad2 from '../../assets/img/Ricardo_Lopez_Rayero_Universidad_2.webp'
+import universidad3 from '../../assets/img/Ricardo_Lopez_Rayero_Universidad_3.webp'
+import trabajos1 from '../../assets/img/Ricardo_Lopez_Rayero_primeros_trabajos_1.webp'
+import trabajos2 from '../../assets/img/Ricardo_Lopez_Rayero_primeros_trabajos_2.webp'
+import trabajos3 from '../../assets/img/Ricardo_Lopez_Rayero_primeros_trabajos_3.webp'
+import id1 from '../../assets/img/Ricardo_Lopez_Rayero_Ingenieria_digital_1.webp'
+import id2 from '../../assets/img/Ricardo_Lopez_Rayero_Ingenieria_digital_2.webp'
+import id3 from '../../assets/img/Ricardo_Lopez_Rayero_Ingenieria_digital_3.webp'
+import sp1 from '../../assets/img/Ricardo_Lopez_Rayero_SuperLeads_1.webp'
+import sp2 from '../../assets/img/Ricardo_Lopez_Rayero_SuperLeads_2.webp'
+import sp3 from '../../assets/img/Ricardo_Lopez_Rayero_SuperLeads_3.webp'
+import int1 from '../../assets/img/Ricardo_Lopez_Rayero_Int_1.webp'
+import int2 from '../../assets/img/Ricardo_Lopez_Rayero_Int_2.webp'
+import int3 from '../../assets/img/Ricardo_Lopez_Rayero_Int_3.webp'
+import personal1 from '../../assets/img/Ricardo_Lopez_Rayero_Vida_personal_1.webp'
+import personal2 from '../../assets/img/Ricardo_Lopez_Rayero_Vida_personal_2.webp'
 import personal3 from '../../assets/img/Ricardo_Lopez_Rayero_Vida_personal_3.png'
 import conclusiones1 from '../../assets/img/Gratitud.png'
 import conclusiones2 from '../../assets/img/perseverancia.png'
 import conclusiones3 from '../../assets/img/enfoque.png'
 
-import { FormattedMessage, useIntl } from 'react-intl';
 import { Btn, ContentBox, Griditem, Gridwrapper, ImagePicture, RedHatDisplay, Roboto } from '../../components/Styled';
 import styles from "../../components/Styled.module.scss";
 import { AutoGraph, Check, ChevronLeft, ChevronRight, Download, PersonOutline, School, WorkOutline } from '@mui/icons-material';
@@ -38,6 +37,9 @@ import spPurple from '../../assets/img/sp_purple.png'
 import spGray from '../../assets/img/sp_gray.png'
 import intGray from '../../assets/img/int_gray.png'
 import intPurple from '../../assets/img/int_purple.png'
+import { useIntl } from 'react-intl';
+
+const FormattedMessage = React.lazy(() => import('react-intl').then(module => ({ default: module.FormattedMessage })));
 
 const Biografia = () => {
   const intl = useIntl(); // Usa el hook useIntl
@@ -74,8 +76,8 @@ const Biografia = () => {
     },
     id: {
       icon: [
-        <ImagePicture src={idGray} className='iconGray'/>,
-        <ImagePicture src={idPurple} className='iconPurple'/>
+        <ImagePicture src={idGray} className='iconGray' alt='Ingenieria_Digital_by_Ricardo_Lopez_Reyero' />,
+        <ImagePicture src={idPurple} className='iconPurple' alt='Ingenieria_Digital_by_Ricardo_Lopez_Reyero_hover' />
       ],
       title: 'biografia.ingenieriaDigital.title',
       content: 'biografia.ingenieriaDigital.content',
@@ -86,8 +88,8 @@ const Biografia = () => {
     },
     sp: {
       icon: [
-        <ImagePicture src={spGray} className='iconGray'/>,
-        <ImagePicture src={spPurple} className='iconPurple'/>
+        <ImagePicture src={spGray} className='iconGray' alt='SuperLeads_by_Ricardo_Lopez_Reyero' />,
+        <ImagePicture src={spPurple} className='iconPurple' alt='SuperLeads_by_Ricardo_Lopez_Reyero_hover' />
       ],
       title: 'biografia.superLeads.title',
       content: 'biografia.superLeads.content',
@@ -98,8 +100,8 @@ const Biografia = () => {
     },
     int: {
       icon: [
-        <ImagePicture src={intGray} className='iconGray'/>,
-        <ImagePicture src={intPurple} className='iconPurple'/>
+        <ImagePicture src={intGray} className='iconGray' alt='INT_by_Ricardo_Lopez_Reyero'/>,
+        <ImagePicture src={intPurple} className='iconPurple' alt='INT_by_Ricardo_Lopez_Reyero_hover' />
       ],
       title: 'biografia.int.title',
       content: 'biografia.int.content',
@@ -196,6 +198,7 @@ const Biografia = () => {
     <ContentBox
     varmaxwidth= '100%' varwidth = '100%' vardisplay = 'flex' varpadding ='120px 0 120px' varpaddingm ='60px 0 60px'
     >
+      <Suspense fallback={<div>Loading...</div>}>
       <div className="biography-section">
         {/* Sidebar menu */}
         <div className="sidebar-menu">
@@ -205,6 +208,7 @@ const Biografia = () => {
               <p className={styles.AboveTitle}>
               <FormattedMessage
                 id="biografia.title"
+                defaultMessage='titulo'
               />
             </p>
             </div>
@@ -216,7 +220,7 @@ const Biografia = () => {
           varpadding ='0 0 85px'
           fontsizemobile = '22px'
           >
-            <FormattedMessage id='biografia.subtitle' />
+            <FormattedMessage id='biografia.subtitle' defaultMessage='subtitulo' />
           </RedHatDisplay>
           {Object.keys(sections).map(section => (
           <button 
@@ -225,7 +229,7 @@ const Biografia = () => {
           className={`menu-item ${selectedSection === section ? 'active' : ''}`}
           >
             {sections[section].icon}
-            <FormattedMessage id={sections[section].title} />
+            <FormattedMessage id={sections[section].title} defaultMessage='titulo de seccion' />
             <ChevronRight className='angle' />
           </button>
           ))}
@@ -258,14 +262,14 @@ const Biografia = () => {
               varpadding ='0 0 25px'
               fontsizemobile = '22px'
               >
-                <FormattedMessage id='biografia.subtitle' />
+                <FormattedMessage id='biografia.subtitle' defaultMessage='subtitulo' />
               </RedHatDisplay>
             </ContentBox>
 
             <Gridwrapper vargridtemplatecolumns='20% 40% 20%' justifyContent ='space-between' varwidth='96%'>
               <Griditem>
-                <Btn onClick={handlePrevSection} className="prev-button" varpadding = '5px 9px'>
-                  <ChevronLeft />
+                <Btn onClick={handlePrevSection} className="prev-button" varpadding = '5px 9px' aria-label="Anterior">
+                  <ChevronLeft aria-hidden="true" />
                 </Btn>
               </Griditem>
               <Griditem>
@@ -273,8 +277,8 @@ const Biografia = () => {
 
               </Griditem>
               <Griditem vardisplay='flex' alignItems = 'flex-end'>
-                <Btn onClick={handleNextSection} className="next-button" varpadding = '5px 9px'>
-                  <ChevronRight />
+                <Btn onClick={handleNextSection} className="next-button" varpadding = '5px 9px' aria-label="Siguiente">
+                  <ChevronRight aria-hidden="true"/>
                 </Btn>
               </Griditem>
             </Gridwrapper>
@@ -283,14 +287,14 @@ const Biografia = () => {
         <div className="content-box">
           <div className='image-gallery'>
           {sections[selectedSection]?.images?.map((imgSrc, index) => (
-            <img src={imgSrc} alt={`section-${selectedSection}-image-${index}`} key={index} />
+            <img src={imgSrc} alt={`section-${selectedSection}-image-${index}`} key={index} loading='lazy' />
           ))}
           </div>
           {selectedSection === 'conclusiones' ? (
             sections.conclusiones.contents.map((paragraph, index) => (
               <div key={index} className="paragraph-container">
                 <Roboto varfontsize='16px' varcolor='#595959' varweight='400' vartextalign='left' varlineheight='1.5em' varfontsizemobile ='13px'>
-                  <FormattedMessage id={paragraph} />
+                  <FormattedMessage id={paragraph} defaultMessage='contenido' />
                 </Roboto>
                 <Btn onClick={() => copyToClipboard(paragraph)} className="copy-button" vargridgap ='10px' varcolor='#2A2FAB' varweight ='400' backgcolor='#f0f0f000' varpadding= '10px 48px' varfontsizemobile = '12px' smpadd = '6px 12px' vardropshadowmobile='none' varmargin='7px 0 0 auto'><Download className='icondownload'/> Copiar</Btn>
               </div>
@@ -309,13 +313,14 @@ const Biografia = () => {
                 values={{
                   br: <br />,
                 }}
+                defaultMessage='contents'
               />
             </Roboto>
           )}
         </div>
       </div>
     </div>
-
+    </Suspense>
     </ContentBox>
   );
 };

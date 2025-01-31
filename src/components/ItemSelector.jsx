@@ -4,7 +4,7 @@ import ListItemText from '@mui/material/ListItemText';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
 import { Btn, RedHatDisplay } from './Styled';
-import { ExpandMoreOutlined } from '@mui/icons-material';
+import ExpandMoreOutlined from '@mui/icons-material/ExpandMoreOutlined';
 
 const idioma = {
   'ES': '/',

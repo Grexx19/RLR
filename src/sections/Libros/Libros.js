@@ -1,9 +1,10 @@
-import React from 'react';
-import { FormattedMessage } from 'react-intl';
+import React, { Suspense } from 'react';
 
 import styles from "../../components/Styled.module.scss";
 import stylesLibros from "./Libros.module.scss"
 import { Btn, RedHatDisplay } from '../../components/Styled';
+
+const FormattedMessage = React.lazy(() => import('react-intl').then(module => ({ default: module.FormattedMessage })));
 
 const Libros = () => {
   let TusOrdenes = require("../../assets/img/Ricardo_Lopez_Rayero_Books_Tus_ordenes.png");
@@ -25,6 +26,7 @@ const Libros = () => {
 
   return (
     <div className={stylesLibros.librosSection}>
+      <Suspense  fallback={<div>Loading...</div>}>
       <div className={stylesLibros.container}>
         
       <div className={stylesLibros.titleContent}>
@@ -34,6 +36,7 @@ const Libros = () => {
             <p className={styles.AboveTitle}>
               <FormattedMessage
                 id="libros.title"
+                defaultMessage='Libros'
               />
             </p>
           </div>
@@ -47,6 +50,7 @@ const Libros = () => {
           >
             <FormattedMessage
               id="libros.subtitle"
+              defaultMessage='Libros'
             />
           </RedHatDisplay>
         </div>
@@ -54,56 +58,54 @@ const Libros = () => {
 
         <div className={stylesLibros.biblioteca}>
           <div>
-            <img src={TusOrdenes} alt="Books_Tus_ordenes_RicardoLopezRayero" className={stylesLibros.img}/>
+            <img src={TusOrdenes} alt="Books_Tus_ordenes_RicardoLopezRayero" className={stylesLibros.img} loading='lazy'/>
           </div>
           <div>
-            <img src={ImaginacionDespierta} alt="Books_Imaginacion_despierta_RicardoLopezRayero" className={stylesLibros.img}/>
+            <img src={ImaginacionDespierta} alt="Books_Imaginacion_despierta_RicardoLopezRayero" className={stylesLibros.img} loading='lazy'/>
           </div>
           <div>
-            <img src={LlavesExito} alt="Books_Las_Leyes_del_Exito_RicardoLopezRayero" className={stylesLibros.img}/>
+            <img src={LlavesExito} alt="Books_Las_Leyes_del_Exito_RicardoLopezRayero" className={stylesLibros.img} loading='lazy'/>
           </div>
           <div>
-            <img src={TrabajarConLey} alt="Books_Trabajar_con_la_ley_RicardoLopezRayero" className={stylesLibros.img}/>
+            <img src={TrabajarConLey} alt="Books_Trabajar_con_la_ley_RicardoLopezRayero" className={stylesLibros.img} loading='lazy'/>
           </div>
           <div>
-            <img src={HagaseRico} alt="Books_Piense_y_hagase_rico_RicardoLopezRayero" className={stylesLibros.img}/>
+            <img src={HagaseRico} alt="Books_Piense_y_hagase_rico_RicardoLopezRayero" className={stylesLibros.img} loading='lazy'/>
           </div>
           <div>
-            <img src={Dinero} alt="Books_Dinero:Domina el juego_RicardoLopezRayero" className={stylesLibros.img}/>
+            <img src={Dinero} alt="Books_Dinero:Domina el juego_RicardoLopezRayero" className={stylesLibros.img} loading='lazy'/>
           </div>
           <div>
-            <img src={Offers} alt="Books_100M_offers_RicardoLopezRayero" className={stylesLibros.img}/>
+            <img src={Offers} alt="Books_100M_offers_RicardoLopezRayero" className={stylesLibros.img} loading='lazy'/>
           </div>
           <div>
-            <img src={Doctom} alt="Books_Dotcom_secrets_RicardoLopezRayero" className={stylesLibros.img}/>
+            <img src={Doctom} alt="Books_Dotcom_secrets_RicardoLopezRayero" className={stylesLibros.img} loading='lazy'/>
           </div>
           <div>
-            <img src={DeCeroAUno} alt="Books_De_cero_a_uno_RicardoLopezRayero" className={stylesLibros.img}/>
+            <img src={DeCeroAUno} alt="Books_De_cero_a_uno_RicardoLopezRayero" className={stylesLibros.img} loading='lazy'/>
           </div>
           <div>
-            <img src={Marketing} alt="Books_Growth_hacker_marketing_RicardoLopezRayero" className={stylesLibros.img}/>
+            <img src={Marketing} alt="Books_Growth_hacker_marketing_RicardoLopezRayero" className={stylesLibros.img} loading='lazy'/>
           </div>
           <div>
-            <img src={Wringht} alt="Books_Wringht_RicardoLopezRayero" className={stylesLibros.img}/>
+            <img src={Wringht} alt="Books_Wringht_RicardoLopezRayero" className={stylesLibros.img} loading='lazy'/>
           </div>
           <div>
-            <img src={Estrategia} alt="Books_Las_claves_de_la_estrategia_RicardoLopezRayero" className={stylesLibros.img}/>
+            <img src={Estrategia} alt="Books_Las_claves_de_la_estrategia_RicardoLopezRayero" className={stylesLibros.img} loading='lazy'/>
           </div>
           <div>
-            <img src={Utopia} alt="Books_Utopia_para_realistas_RicardoLopezRayero" className={stylesLibros.img}/>
+            <img src={Utopia} alt="Books_Utopia_para_realistas_RicardoLopezRayero" className={stylesLibros.img} loading='lazy'/>
           </div>
           <div>
-            <img src={MundoFeliz} alt="Books_Un_mundo_feliz_RicardoLopezRayero" className={stylesLibros.img}/>
+            <img src={MundoFeliz} alt="Books_Un_mundo_feliz_RicardoLopezRayero" className={stylesLibros.img} loading='lazy'/>
           </div>
           <div>
-            <img src={NaveIntra} alt="Books_La_nave_intra_RicardoLopezRayero" className={stylesLibros.img}/>
+            <img src={NaveIntra} alt="Books_La_nave_intra_RicardoLopezRayero" className={stylesLibros.img} loading='lazy'/>
           </div>
 
         </div> 
         <div className={stylesLibros.divBtn}>
-          <Btn 
-          backgcolor ='#9DA2EF'
-          backgcolorhover = '#585DCC'
+          <Btn
           varfontsize = '20px'
           as="a"
           varfontsizemobile = '17px'
@@ -112,6 +114,7 @@ const Libros = () => {
           >
             <FormattedMessage
               id="libros.button"
+              defaultMessage='descargar lista'
             />
             <div>
             <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -122,6 +125,7 @@ const Libros = () => {
           </Btn>
         </div>
       </div>
+      </Suspense>
     </div>
   );
 };

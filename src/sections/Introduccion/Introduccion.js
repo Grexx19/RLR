@@ -1,19 +1,45 @@
-import React from 'react';
-import { FormattedMessage } from 'react-intl';
+import React, { useEffect, useState } from 'react';
 
 import styles from "../../components/Styled.module.scss";
 import stylesIntroduction from "./Introduccion.module.scss";
 import { ContentBox, ImagePicture, RedHatDisplay } from '../../components/Styled';
 
 const Introduccion = () => {
-let id = require('../../assets/img/Ingenieria_Digital_by_Ricardo_Lopez.png');
-let superleads = require('../../assets/img/SuperLeads_by_Ricardo_Lopez.png');
-let int = require('../../assets/img/INT_by_Ricardo_Lopez.png');
-let rlrmovil = require('../../assets/img/rlrmovil.png');
+let id = require('../../assets/img/Ingenieria_Digital_by_Ricardo_Lopez.webp');
+let superleads = require('../../assets/img/SuperLeads_by_Ricardo_Lopez.webp');
+let int = require('../../assets/img/INT_by_Ricardo_Lopez.webp');
+let rlrmovil = require('../../assets/img/rlrmovil.webp');
+
+const FormattedMessage = React.lazy(() => import('react-intl').then(module => ({ default: module.FormattedMessage })));
+
+const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      // Detectar si el dispositivo es móvil (por ejemplo, si el viewport es menor a 800px)
+      setIsMobile(window.innerWidth <= 800);
+    };
+
+    // Ejecutar una vez al cargar la página
+    handleResize();
+
+    // Agregar un listener para manejar el cambio de tamaño de la pantalla
+    window.addEventListener('resize', handleResize);
+
+    // Limpiar el listener cuando el componente se desmonte
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  // Definir el fondo solo si no es móvil
+  const backgroundImage = !isMobile 
+    ? { backgroundImage: `url(${require('../../assets/img/Ricardo_Lopez_Rayero_Introduccion.webp')})` }
+    : { backgroundColor: '#020926' };  // Color de fondo para móviles
+
 
   return (
-    <div className={stylesIntroduction.introduccionSection}>
-      
+    <div className={stylesIntroduction.introduccionSection} style={backgroundImage}>
         <ContentBox
         varmaxwidth= '1248px'
         varwidth= '100%'
@@ -27,6 +53,7 @@ let rlrmovil = require('../../assets/img/rlrmovil.png');
               <p className={styles.AboveTitleP}>
               <FormattedMessage
                 id="introduction.nameis"
+                defaultMessage='Mi nombre es'
               />
             </p>
             </div>
@@ -35,6 +62,7 @@ let rlrmovil = require('../../assets/img/rlrmovil.png');
             <p className={styles.nameSans}>
               <FormattedMessage
                 id="introduction.name"
+                defaultMessage='Ricardo Lopez Reyero'
               />
             </p>
             
@@ -43,6 +71,7 @@ let rlrmovil = require('../../assets/img/rlrmovil.png');
                 id="introduction.abovetitle"
                 defaultMessage="<p style={{ whiteSpace: 'pre-line' }}><strong>Ingeniero  |  Consultor digital  |  INT lover</strong></p>"
                 values={{ p: (chunks) => <p>{chunks}</p> }}
+                
               />
             </p>
             <ContentBox
@@ -50,7 +79,7 @@ let rlrmovil = require('../../assets/img/rlrmovil.png');
             vardisplay = 'none'
             varmargin = '19px 0 0'
             >
-              <ImagePicture src={rlrmovil} varwidth='100%' alt='ricardo_lopez_reyero' />
+              <ImagePicture src={rlrmovil} varwidth='450px' varmaxwidth='100%' alt='ricardo_lopez_reyero' loading='lazy' />
             </ContentBox>
           </div>
           <div className={stylesIntroduction.contenText}>
@@ -63,20 +92,21 @@ let rlrmovil = require('../../assets/img/rlrmovil.png');
                   strong: (chunks) => <strong>{chunks}</strong>,
                   br: <br />
                 }}
+                defaultMessage='descripcion'
               />
             </p>
           </div>
           <div className={stylesIntroduction.contentProyectos}>
             <a href='https://ingenieriadigital.mx'>
-              <img src={id} alt="IngenieriaDigital_RicardoLopezRayero" className={stylesIntroduction.imgID}/>
+              <img src={id} alt="IngenieriaDigital_RicardoLopezRayero" className={stylesIntroduction.imgID} loading='lazy'/>
               <RedHatDisplay varcolor = 'white' varfontsize = '13px' varpadding= '10px 0 0'>2019</RedHatDisplay>
             </a>
             <a href='https://superleads.mx'>
-              <img src={superleads} alt="SuperLeads_RicardoLopezRayero" className={stylesIntroduction.imgSL}/>
+              <img src={superleads} alt="SuperLeads_RicardoLopezRayero" className={stylesIntroduction.imgSL} loading='lazy'/>
               <RedHatDisplay varcolor = 'white' varfontsize = '13px' varpadding= '10px 0 0'>2022</RedHatDisplay>
             </a>
             <a href='https://int.store'>
-              <img src={int} alt="Int_RicardoLopezRayero" className={stylesIntroduction.imgInt}/>
+              <img src={int} alt="Int_RicardoLopezRayero" className={stylesIntroduction.imgInt} loading='lazy'/>
               <RedHatDisplay varcolor = 'white' varfontsize = '13px' varpadding= '10px 0 0'>2022</RedHatDisplay>
             </a>
           </div>
@@ -86,7 +116,7 @@ let rlrmovil = require('../../assets/img/rlrmovil.png');
             vartextalign = 'left'
             varpadding = '48px 0 30px'
           >
-            <FormattedMessage id='introduction.updated' />
+            <FormattedMessage id='introduction.updated' defaultMessage='ultima actualizacion'/>
           </RedHatDisplay>
           </div>
         </ContentBox>

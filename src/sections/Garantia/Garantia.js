@@ -1,13 +1,15 @@
-import React from 'react';
-import { FormattedMessage } from 'react-intl';
+import React, { Suspense } from 'react';
 
 import styles from "../../components/Styled.module.scss";
 import stylesGarantia from "../Garantia/Garantia.module.scss"
+
+const FormattedMessage = React.lazy(() => import('react-intl').then(module => ({ default: module.FormattedMessage })));
 
 const Garantia = () => {
 
   return (
     <div className={stylesGarantia.garantiaSection}>
+      <Suspense  fallback={<div>Loading...</div>}>
       <div className={stylesGarantia.container}>
         <div className={stylesGarantia.comillaLeft}>
           <svg width="41" height="36" viewBox="0 0 41 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -18,10 +20,11 @@ const Garantia = () => {
           <p className={styles.garantiaSans}>
             <FormattedMessage
               id="garantia.content"
+              defaultMessage='Garantia contenido'
             />
           </p>
           <p className={styles.autorRoboto}>
-            - Ricardo Lopez Reyero
+            - Ricardo López Reyero
           </p>
         </div>
         
@@ -32,7 +35,7 @@ const Garantia = () => {
         </div>
 
       </div>
-
+      </Suspense>
     </div>
   );
 };

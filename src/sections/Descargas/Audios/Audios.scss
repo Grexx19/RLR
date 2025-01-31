@@ -5,29 +5,7 @@
     outline: none;
     margin: 30px 0;
   }
-  
-  /* Cambiar el color de los textos y del fondo */
-  .custom-audio::-webkit-media-controls-panel {
-    background-color: #9DA2EF;
-    border-radius: 8px;
-    color: white;
-  }
-  
-  /* Invertir los colores de los botones principales */
-  .custom-audio::-webkit-media-controls-play-button,
-  .custom-audio::-webkit-media-controls-current-time-display,
-  .custom-audio::-webkit-media-controls-time-remaining-display,
-  .custom-audio::-webkit-media-controls-timeline,
-  .custom-audio::-webkit-media-controls-mute-button,
-  .custom-audio::-webkit-media-controls-volume-slider {
-    filter: invert(100%);
-  }
-  
-  /* Específicamente apuntar a los tres puntos (menu-button) */
-  .custom-audio::-webkit-media-controls-menu-button {
-    filter: invert(100%);
-    color: white;
-  }
+
   .rhap_container {
     background-color: #9DA2EF !important; /* Color de fondo del reproductor */
     margin: 30px 0 0;

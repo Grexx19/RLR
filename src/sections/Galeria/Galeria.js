@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import { FormattedMessage } from 'react-intl';
+import React, { useState, useEffect, Suspense } from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -9,20 +8,22 @@ import stylesGaleria from "./Galeria.module.scss";
 import { ContentBox, RedHatDisplay } from '../../components/Styled';
 import './Galeria.scss';
 
+const FormattedMessage = React.lazy(() => import('react-intl').then(module => ({ default: module.FormattedMessage })));
+
 const Galeria = () => {
   const images = [
-    require("../../assets/img/Ricardo_Lopez_Rayero_Galeria_A&R_1.jpg"),
-    require("../../assets/img/Ricardo_Lopez_Rayero_Galeria_A&R_2.jpg"),
-    require("../../assets/img/Ricardo_Lopez_Rayero_Galeria_A&R_3.jpg"),
-    require("../../assets/img/Ricardo_Lopez_Rayero_Galeria_A&R_4.jpg"),
-    require("../../assets/img/Ricardo_Lopez_Rayero_Galeria_A&R_5.jpg"),
-    require("../../assets/img/Ricardo_Lopez_Rayero_Galeria_A&R_6.jpg"),
-    require("../../assets/img/Ricardo_Lopez_Rayero_Galeria_A&R_7.jpg"),
-    require("../../assets/img/Ricardo_Lopez_Rayero_Galeria_A&R_8.jpg"),
-    require("../../assets/img/Ricardo_Lopez_Rayero_Galeria_A&R_9.jpg"),
-    require("../../assets/img/Ricardo_Lopez_Rayero_Galeria_A&R_10.jpg"),
-    require("../../assets/img/Ricardo_Lopez_Rayero_Galeria_A&R_11.jpg"),
-    require("../../assets/img/Ricardo_Lopez_Rayero_Galeria_A&R_13.jpg")
+    require("../../assets/img/Ricardo_Lopez_Rayero_Galeria_A&R_1.webp"),
+    require("../../assets/img/Ricardo_Lopez_Rayero_Galeria_A&R_2.webp"),
+    require("../../assets/img/Ricardo_Lopez_Rayero_Galeria_A&R_3.webp"),
+    require("../../assets/img/Ricardo_Lopez_Rayero_Galeria_A&R_4.webp"),
+    require("../../assets/img/Ricardo_Lopez_Rayero_Galeria_A&R_5.webp"),
+    require("../../assets/img/Ricardo_Lopez_Rayero_Galeria_A&R_6.webp"),
+    require("../../assets/img/Ricardo_Lopez_Rayero_Galeria_A&R_7.webp"),
+    require("../../assets/img/Ricardo_Lopez_Rayero_Galeria_A&R_8.webp"),
+    require("../../assets/img/Ricardo_Lopez_Rayero_Galeria_A&R_9.webp"),
+    require("../../assets/img/Ricardo_Lopez_Rayero_Galeria_A&R_10.webp"),
+    require("../../assets/img/Ricardo_Lopez_Rayero_Galeria_A&R_11.webp"),
+    require("../../assets/img/Ricardo_Lopez_Rayero_Galeria_A&R_12.webp")
   ];
 
   const settings = {
@@ -62,13 +63,14 @@ const Galeria = () => {
 
   return (
     <div className={stylesGaleria.galeriaSection}>
+      <Suspense fallback={<div>Loading...</div>}>
       <div className={stylesGaleria.titleContent}>
         <div className={stylesGaleria.container}>
           <div className={styles.columnsAboveTitleCenter}>
             <div className={styles.littleLinePurple} />
             <div>
               <p className={styles.AboveTitleP}>
-                <FormattedMessage id="galeria.title" />
+                <FormattedMessage id="galeria.title" defaultMessage='Galeria'/>
               </p>
             </div>
           </div>
@@ -86,7 +88,7 @@ const Galeria = () => {
               varpadding='0 10px 0'
               varpaddingmobile='18px'
             >
-              <FormattedMessage id="galeria.subtitle" />
+              <FormattedMessage id="galeria.subtitle" defaultMessage='subtitulo Galeria' />
             </RedHatDisplay>
           </ContentBox>
         </div>
@@ -98,7 +100,7 @@ const Galeria = () => {
           <Slider {...settings}>
             {images.map((img, index) => (
               <div key={index}>
-                <img src={img} alt={`Galeria_RicardoLopezRayero_${index + 1}`} className={stylesGaleria.img} />
+                <img src={img} alt={`Galeria_RicardoLopezRayero_${index + 1}`} className={stylesGaleria.img} loading='lazy' />
               </div>
             ))}
           </Slider>
@@ -106,7 +108,7 @@ const Galeria = () => {
           // Galería de imágenes para escritorio
           images.map((img, index) => (
             <div key={index} onClick={() => handleImageClick(img)}>
-              <img src={img} alt={`Galeria_RicardoLopezRayero_${index + 1}`} className={stylesGaleria.img} />
+              <img src={img} alt={`Galeria_RicardoLopezRayero_${index + 1}`} className={stylesGaleria.img} loading='lazy' />
             </div>
           ))
         )}
@@ -118,6 +120,7 @@ const Galeria = () => {
           <img className="modal-content" src={selectedImage} alt="Imagen ampliada" />
         </div>
       )}
+      </Suspense>
     </div>
   );
 };

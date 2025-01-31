@@ -28,35 +28,39 @@
         padding-bottom: 56px;
 
         .image1{
-            width: 100%;
+            max-width: 100%;
+            width: 280px;
             transition: transform 0.3s ease;
             display: block;
 
         }
         .image1:hover {
             transform: scale(1.1); /* Cambiar tamaño en hover */
-            content: url('../../assets/img/Ricardo_Lopez_Rayero_Estudios_Proctor_Gallagher_hover.png'); /* Cambiar imagen en hover */
+            content: url('../../assets/img/Ricardo_Lopez_Rayero_Estudios_Proctor_Gallagher_hover.webp'); /* Cambiar imagen en hover */
         }
         .image2{
             @extend .image1;
+            width: 417px;
         }
         .image2:hover {
             transform: scale(1.1); /* Cambiar tamaño en hover */
-            content: url('../../assets/img/Ricardo_Lopez_Rayero_Estudios_Tecnologico_de_Monterrey_hover.png'); /* Cambiar imagen en hover */
+            content: url('../../assets/img/Ricardo_Lopez_Rayero_Estudios_Tecnologico_de_Monterrey_hover.webp'); /* Cambiar imagen en hover */
         }
         .image3{
             @extend .image1;
+            width: 183px;
         }
         .image3:hover {
             transform: scale(1.1); /* Cambiar tamaño en hover */
-            content: url('../../assets/img/Ricardo_Lopez_Rayero_Estudios_Montesori_hover.png'); /* Cambiar imagen en hover */
+            content: url('../../assets/img/Ricardo_Lopez_Rayero_Estudios_Montesori_hover.webp'); /* Cambiar imagen en hover */
         }
         .image4{
             @extend .image1;
+            width: 300px;
         }
         .image4:hover {
             transform: scale(1.1); /* Cambiar tamaño en hover */
-            content: url('../../assets/img/Ricardo_Lopez_Rayero_Estudios_Platzi_hover.png'); /* Cambiar imagen en hover */
+            content: url('../../assets/img/Ricardo_Lopez_Rayero_Estudios_Platzi_hover.webp'); /* Cambiar imagen en hover */
         }
     }
 }
@@ -70,7 +74,7 @@
             flex-wrap: wrap;
             grid-gap: 63px;
             .image1{
-                width: 80%;
+                max-width: 80%;
                 transition: none;
                 margin: auto;
                 display: none;

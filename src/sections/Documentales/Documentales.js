@@ -1,10 +1,11 @@
-import React from 'react';
-import { FormattedMessage } from 'react-intl';
+import React, { Suspense } from 'react';
 
 import styles from "../../components/Styled.module.scss";
 import "./Documentales.scss"
 import { RedHatDisplay } from '../../components/Styled';
 import VideoGrid from './Videos';
+
+const FormattedMessage = React.lazy(() => import('react-intl').then(module => ({ default: module.FormattedMessage })));
 
 const Documentales = () => {
   return (
@@ -16,6 +17,7 @@ const Documentales = () => {
             <p className={styles.AboveTitle}>
               <FormattedMessage
                 id="documentales.title"
+                defaultMessage='titulo'
               />
             </p>
          </div>
@@ -29,11 +31,14 @@ const Documentales = () => {
           >
               <FormattedMessage
                 id="documentales.subtitle"
+                defaultMessage='subtitulo'
               />
           </RedHatDisplay>
         </div>
       </div>
-      <VideoGrid />
+      <Suspense fallback={<div>Loading...</div>} >
+        <VideoGrid />
+      </Suspense>
     </div>
   );
 };

@@ -46,9 +46,9 @@ const Marcas = () => {
             alignItems ='end'
             fdirectionmovil = 'row-reverse'
             >
-                <ImagePicture src={id} 
-                varmaxwidth = '378px'
-                varwidth = '100%' 
+                <ImagePicture src={id}  loading='lazy'
+                varwidth = '378px'
+                varmaxwidth = '100%' 
                 />
                 <Btn
                 varmargin = '56px 0 0'
@@ -73,9 +73,9 @@ const Marcas = () => {
                 alignItems ='end'
                 fdirectionmovil = 'row-reverse'
             >
-                <ImagePicture src={sp} 
-                varmaxwidth = '378px'
-                varwidth = '100%' 
+                <ImagePicture src={sp}  loading='lazy'
+                varwidth = '378px'
+                varmaxwidth = '100%' 
                 />
                 <Btn
                 varmargin = '56px 0 0'
@@ -101,9 +101,9 @@ const Marcas = () => {
                 alignItems ='end'
                 fdirectionmovil = 'row-reverse'
             >
-                <ImagePicture src={int} 
-                varmaxwidth = '378px'
-                varwidth = '100%' 
+                <ImagePicture src={int}  loading='lazy'
+                varwidth = '378px'
+                varmaxwidth = '100%' 
                 />
                 <Btn
                 varmargin = '56px 0 0'

@@ -1,9 +1,9 @@
-import React from 'react';
-import { FormattedMessage } from 'react-intl';
-
+import React, { Suspense } from 'react';
 import styles from "../Styled.module.scss";
 import stylesBottom from "./Bottom.module.scss"
 import { RedHatDisplay } from '../Styled';
+
+const FormattedMessage = React.lazy(() => import('react-intl').then(module => ({ default: module.FormattedMessage })));
 
 const Bottom = () => {
   let id = require('../../assets/img/Ingenieria_Digital_by_Ricardo_Lopez.png');
@@ -11,11 +11,13 @@ const Bottom = () => {
   let sp = require('../../assets/img/SuperLeads_by_Ricardo_Lopez.png');
   return (
     <div className={stylesBottom.bottonSection}>
+      <Suspense fallback={<div>Cargando sección...</div>}>
       <div className={stylesBottom.container}>
         <div>
           <p className={styles.boldSans}>
             <FormattedMessage
               id="bottom.text"
+              defaultMessage='bottom'
             />
           </p>
         </div>
@@ -36,6 +38,7 @@ const Bottom = () => {
             
           </div>
     </div>
+    </Suspense>
     </div>
   );
 };

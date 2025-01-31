@@ -4,9 +4,10 @@ import './Hero.scss'
 import styles from "../../../components/Styled.module.scss";
 import { FormattedMessage } from 'react-intl'
 
-const Hero = () => {
+const Hero = ({ id }) => {
   return (
     <ContentBox
+    id={id}
     className='SectionHero'
     vardisplay = 'flex'
     varminheight = '361px'

@@ -4,9 +4,10 @@ import { FormattedMessage } from 'react-intl'
 import './Bottom.scss'
 import ShareButton from '../../../components/ShareButton'
 
-const Bottom = () => {
+const Bottom = ({ id }) => {
   return (
     <ContentBox
+    id={id}
     varmaxwidth= '100%'
     varwidth= '100%'
     className='backg'

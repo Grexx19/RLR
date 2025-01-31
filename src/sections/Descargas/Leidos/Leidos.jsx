@@ -4,12 +4,13 @@ import { FormattedMessage } from 'react-intl'
 import './Leidos.scss'
 import Download from '@mui/icons-material/Download'
 
-const Leidos = () => {
+const Leidos = ({ id }) => {
     let pdfLeidos = require('../../../assets/docs/Libros Leídos y recomendaciones Ricardo López Reyero 2024.pdf')
     let leidos = require('../../../assets/img/libros_leidos_Ricardo_Lopez_Reyero.png')
 
   return (
     <ContentBox
+    id={id}
     varmaxwidth = '1268px'
     varwidth = '100%'
     varpadding = '0 0 120px'
@@ -34,7 +35,7 @@ const Leidos = () => {
             >
                 <FormattedMessage id='downloads.books.title'/>
             </RedHatDisplay>
-            <ImagePicture src={leidos} varmaxwidth ='100%' vardisplay = 'none' vardisplaymovil= 'block' />
+            <ImagePicture src={leidos} varmaxwidth ='100%' varwidth='450px' vardisplay = 'none' vardisplaymovil= 'block' loading='lazy' />
             <ContentBox
                 varmaxwidth = '447px'
                 varwidth = '95%'

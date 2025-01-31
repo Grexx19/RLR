@@ -22,11 +22,33 @@
         justify-content: space-between;
         margin-top: 71px;
     }
-    .albunes > div{
+    .albunes > a{
         width: 32.3%;
+        text-decoration: none;
     }
     .img{
         width: 100%;
+    }
+    .songContainer{
+        border: 1px solid #dddd;
+        border-radius: 20px;
+        transition: transform 0.3s ease;
+        /* Transición suave en hover */
+        &:hover {
+            box-shadow: 0px 8px 16px rgba(119, 33, 107, 0.3);
+        }
+    }
+    .btnPlay{
+        font-size: 60px;
+        float: right;
+        margin-top: -37px;
+        color: #595959;
+        cursor: pointer;
+        transition: color 0.3s ease; /* Transición suave en hover */
+
+        &:hover {
+            color: #360ec7; /* Cambia de color al pasar el mouse */
+        }
     }
 }
 @media(max-width:800px){
@@ -38,8 +60,12 @@
             margin: 20px auto;
             grid-gap: 20px;
         }
-        .albunes > div{
+        .albunes > a{
             width: 100%;
+        }
+        .btnPlay{
+            font-size: 40px;
+            margin-top: -27px;
         }
     }
 }

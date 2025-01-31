@@ -2,9 +2,9 @@ import React from 'react'
 import { Btn, ContentBox, Griditem, Gridwrapper, ImagePicture, RedHatDisplay } from '../../../components/Styled'
 import { FormattedMessage } from 'react-intl'
 import './Tarjetas.scss'
-import { Download } from '@mui/icons-material'
+import Download from '@mui/icons-material/Download'
 
-const Tarjetas = () => {
+const Tarjetas = ({ id }) => {
     let tarjetThomas = require('../../../assets/img/Thomas_Alba_Edinson_Ricardo_Lopez_Reyero.png');
     let tarjetCredo = require('../../../assets/img/Credo_del_genio_Ricardo_Lopez_Reyero.png');
     let objetivo = require('../../../assets/img/mi_objetivo_Ricardo_Lopez_Reyero.png')
@@ -12,6 +12,7 @@ const Tarjetas = () => {
     let pdfCredo = require('../../../assets/docs/Tarjeta Objetivos - Credo del genio.pdf')
   return (
     <ContentBox
+    id={ id }
     varmaxwidth = '100%'
     varwidth = '100%'
     varminheight = '665px'
@@ -51,10 +52,10 @@ const Tarjetas = () => {
                     varmargin = '0 0 22px'
                     >
                         <Griditem>
-                            <ImagePicture src={tarjetThomas} varwidth= '100%' />
+                            <ImagePicture src={tarjetThomas} varwidth='275px' varmaxwidth= '100%' loading='lazy' />
                         </Griditem>
                         <Griditem>
-                            <ImagePicture src={objetivo} varwidth= '100%' />
+                            <ImagePicture src={objetivo} varwidth='275px' varmaxwidth= '100%' loading='lazy' />
                         </Griditem>
                     </Gridwrapper>
                     <Btn
@@ -84,10 +85,10 @@ const Tarjetas = () => {
                     varmargin = '0 0 22px'
                     >
                         <Griditem>
-                            <ImagePicture src={tarjetCredo} varwidth= '100%' />
+                            <ImagePicture src={tarjetCredo} varwidth='275px' varmaxwidth= '100%' loading='lazy' />
                         </Griditem>
                         <Griditem>
-                            <ImagePicture src={objetivo} varwidth= '100%' />
+                            <ImagePicture src={objetivo} varwidth='275px' varmaxwidth= '100%' loading='lazy' />
                         </Griditem>
                     </Gridwrapper>
                     <Btn
