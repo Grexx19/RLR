@@ -8,6 +8,15 @@ const VisitCounter = () => {
     const fetchCount = async () => {
       try {
         const response = await fetch('/api/visit-counter.php');
+
+        // Check if response is OK and is JSON
+        const contentType = response.headers.get('content-type');
+        if (!response.ok || !contentType || !contentType.includes('application/json')) {
+          // API not available or returned non-JSON, silently fail
+          console.warn('VisitCounter API no disponible');
+          return;
+        }
+
         const data = await response.json();
         setCount(data.count);
       } catch (error) {
@@ -20,7 +29,7 @@ const VisitCounter = () => {
 
   return (
     <div>
-      <RedHatDisplay varcolor='transparent' varweight ='500'>Visitantes: {count}</RedHatDisplay>
+      <RedHatDisplay varcolor='transparent' varweight='500'>Visitantes: {count}</RedHatDisplay>
     </div>
   );
 };

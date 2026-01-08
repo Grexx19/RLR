@@ -7,7 +7,6 @@ import Footer from './components/Footer/Footer';
 import { IntlProvider } from 'react-intl';
 import esMessages from './locales/es.json';
 import enMessages from './locales/en.json';
-import MarcasPage from './pages/Marcas.jsx';
 
 const messages = {
   es: esMessages,
@@ -55,7 +54,6 @@ function App() {
 
           {/* Ruta para la página Descargas en español */}
           <Route path="/descargas" element={<Descargas />} />
-          <Route path="/marcas" element={<MarcasPage />} />
 
           {/* Ruta para la página principal en inglés */}
           <Route path="/en" element={<Home />} />
@@ -63,8 +61,6 @@ function App() {
           {/* Ruta para la página Descargas en inglés */}
           <Route path="/en/descargas" element={<Descargas />} />
 
-          {/* Agrega más rutas si tienes otras páginas */}
-          <Route path="/en/marcas" element={<MarcasPage />} />
         </Routes>
       </Suspense>
       <Footer footerRef={footerRef} />

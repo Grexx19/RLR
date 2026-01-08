@@ -14,14 +14,14 @@ const Home = React.memo(() => (
     <div>
         <Introduccion />
         <Biografia />
-        <Eventos/>
+        <Eventos />
         <Proposito />
-        <Estudios/>
-        <Libros/>
-        <Documentales/>
-        <Musica/>
-        <Galeria/>
-        <Garantia/>
+        <Estudios />
+        <Libros />
+        <Documentales />
+        <Musica />
+        <Galeria />
+        <Garantia />
     </div>
 ));
 

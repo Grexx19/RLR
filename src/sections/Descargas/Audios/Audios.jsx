@@ -1,10 +1,8 @@
 import React, { lazy, Suspense } from 'react'
 import { ContentBox, Griditem, Gridwrapper, ImagePicture, RedHatDisplay } from '../../../components/Styled'
-import FrecuenciaImg from '../../../assets/img/Frecuencia_296Hz_x.png';
 import ImaginationImg from '../../../assets/img/Imagination_Bob_Proctor.png';
 import Thewill from '../../../assets/img/The_will_Bob_Proctor.png'
 import PercepcionImg from '../../../assets/img/Percepcion_Bob_Proctor.png'
-import Audio1 from '../../../assets/Audios/Frecuencia 396Hz.MP3';
 import Audio2 from '../../../assets/Audios/Imagination - Bob Proctor.mp3';
 import Audio3 from "../../../assets/Audios/The Will  - Bob Proctol.mp3";
 import Audio4 from "../../../assets/Audios/Percepcion - Bob Proctol.mp3";
@@ -21,16 +19,9 @@ const AudioPlayer = lazy(() => import('react-h5-audio-player'));
 
 
 const audios = [
+  
   {
     id: 1,
-    audioUrl: Audio1,
-    imgAudio: FrecuenciaImg,
-    title: 'Frecuencia 396Hz',
-    artist: 'x',
-    album: 'Sonidos de Frecuencia'
-  },
-  {
-    id: 2,
     audioUrl: Audio2,
     imgAudio: ImaginationImg,
     title: 'Imagination',
@@ -38,7 +29,7 @@ const audios = [
     album: 'Desarrollo Personal'
   },
   {
-    id: 3,
+    id: 2,
     audioUrl: Audio3,
     imgAudio: Thewill,
     title: 'The Will',
@@ -46,7 +37,7 @@ const audios = [
     album: 'Desarrollo Personal'
   },
   {
-    id: 4,
+    id: 3,
     audioUrl: Audio4,
     imgAudio: PercepcionImg,
     title: 'Percepcion',
@@ -54,7 +45,7 @@ const audios = [
     album: 'Desarrollo Personal'
   },
   {
-    id: 5,
+    id: 4,
     audioUrl: Audio5,
     imgAudio: Mundointerno,
     title: 'Mundo Interno vs Mundo Externo',
@@ -62,7 +53,7 @@ const audios = [
     album: 'Mente y Realidad'
   },
   {
-    id: 6,
+    id: 5,
     audioUrl: Audio6,
     imgAudio: atusordenes,
     title: 'A tus ordenes',
@@ -70,7 +61,7 @@ const audios = [
     album: 'Mente y Realidad'
   },
   {
-    id: 7,
+    id: 6,
     audioUrl: Audio7,
     imgAudio: imaginacionDespierta,
     title: 'Imaginacion Despierta',

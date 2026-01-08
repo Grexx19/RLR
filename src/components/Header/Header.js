@@ -23,7 +23,7 @@ function Header({ footerRef }) {
     navigate('/descargas'); // Navigate to the Descargas page
   };
   const handleMarcasClick = () => {
-    navigate('/marcas'); // Navigate to the Descargas page
+    window.open('https://escritos.ricardolopezreyero.com', '_blank', 'noopener,noreferrer');
   };
 
   const [anchorElNav, setAnchorElNav] = React.useState(null);

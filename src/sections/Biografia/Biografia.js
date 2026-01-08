@@ -1,4 +1,5 @@
 import React, { Suspense, useEffect, useState } from 'react';
+import { FormattedMessage } from 'react-intl';
 import './Biografia.scss'; // Assuming the custom styles are here.
 import inicios1 from '../../assets/img/Ricardo_Lopez_Rayero_Biografia_Vida_1.webp';
 import inicios2 from '../../assets/img/Ricardo_Lopez_Rayero_Biografia_Vida_2.webp';
@@ -39,8 +40,6 @@ import intGray from '../../assets/img/int_gray.png'
 import intPurple from '../../assets/img/int_purple.png'
 import { useIntl } from 'react-intl';
 
-const FormattedMessage = React.lazy(() => import('react-intl').then(module => ({ default: module.FormattedMessage })));
-
 const Biografia = () => {
   const intl = useIntl(); // Usa el hook useIntl
   const [selectedSection, setSelectedSection] = useState('inicios');
@@ -48,7 +47,7 @@ const Biografia = () => {
 
   const sections = {
     inicios: {
-      icon: <Check className='icon'/>,
+      icon: <Check className='icon' />,
       title: 'biografia.inicios.title',
       content: 'biografia.inicios.contenido',
       images: [
@@ -57,7 +56,7 @@ const Biografia = () => {
       contents: []
     },
     universidad: {
-      icon: <School className='icon'/>,
+      icon: <School className='icon' />,
       title: 'biografia.universidad.title',
       content: 'biografia.universidad.contenido',
       images: [
@@ -66,7 +65,7 @@ const Biografia = () => {
       contents: []
     },
     trabajos: {
-      icon: <WorkOutline className='icon'/>,
+      icon: <WorkOutline className='icon' />,
       title: 'biografia.primerostrabajos.title',
       content: 'biografia.primerostrabajos.content',
       images: [
@@ -76,20 +75,20 @@ const Biografia = () => {
     },
     id: {
       icon: [
-        <ImagePicture src={idGray} className='iconGray' alt='Ingenieria_Digital_by_Ricardo_Lopez_Reyero' />,
-        <ImagePicture src={idPurple} className='iconPurple' alt='Ingenieria_Digital_by_Ricardo_Lopez_Reyero_hover' />
+        <ImagePicture key="id-gray" src={idGray} className='iconGray' alt='Ingenieria_Digital_by_Ricardo_Lopez_Reyero' />,
+        <ImagePicture key="id-purple" src={idPurple} className='iconPurple' alt='Ingenieria_Digital_by_Ricardo_Lopez_Reyero_hover' />
       ],
       title: 'biografia.ingenieriaDigital.title',
       content: 'biografia.ingenieriaDigital.content',
       images: [
         id1, id2, id3
       ],
-      contents: [] 
+      contents: []
     },
     sp: {
       icon: [
-        <ImagePicture src={spGray} className='iconGray' alt='SuperLeads_by_Ricardo_Lopez_Reyero' />,
-        <ImagePicture src={spPurple} className='iconPurple' alt='SuperLeads_by_Ricardo_Lopez_Reyero_hover' />
+        <ImagePicture key="sp-gray" src={spGray} className='iconGray' alt='SuperLeads_by_Ricardo_Lopez_Reyero' />,
+        <ImagePicture key="sp-purple" src={spPurple} className='iconPurple' alt='SuperLeads_by_Ricardo_Lopez_Reyero_hover' />
       ],
       title: 'biografia.superLeads.title',
       content: 'biografia.superLeads.content',
@@ -100,15 +99,15 @@ const Biografia = () => {
     },
     int: {
       icon: [
-        <ImagePicture src={intGray} className='iconGray' alt='INT_by_Ricardo_Lopez_Reyero'/>,
-        <ImagePicture src={intPurple} className='iconPurple' alt='INT_by_Ricardo_Lopez_Reyero_hover' />
+        <ImagePicture key="int-gray" src={intGray} className='iconGray' alt='INT_by_Ricardo_Lopez_Reyero' />,
+        <ImagePicture key="int-purple" src={intPurple} className='iconPurple' alt='INT_by_Ricardo_Lopez_Reyero_hover' />
       ],
       title: 'biografia.int.title',
       content: 'biografia.int.content',
       images: [
         int1, int2, int3
       ],
-      contents: [] 
+      contents: []
     },
     vidapersonal: {
       icon: <PersonOutline className='icon' />,
@@ -117,10 +116,10 @@ const Biografia = () => {
       images: [
         personal1, personal2, personal3
       ],
-      contents: [] 
+      contents: []
     },
     conclusiones: {
-      icon: <AutoGraph className='icon'/>,
+      icon: <AutoGraph className='icon' />,
       title: 'biografia.conclusiones.title',
       content: 'biografia.conclusiones.title',
       images: [
@@ -163,8 +162,8 @@ const Biografia = () => {
 
   const sectionKeys = Object.keys(sections);
 
-   // Detectar si es móvil
-   useEffect(() => {
+  // Detectar si es móvil
+  useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768); // Consideramos móvil si el ancho es <= 768px
     };
@@ -193,134 +192,134 @@ const Biografia = () => {
     });
   };
 
-  
+
   return (
     <ContentBox
-    varmaxwidth= '100%' varwidth = '100%' vardisplay = 'flex' varpadding ='120px 0 120px' varpaddingm ='60px 0 60px'
+      varmaxwidth='100%' varwidth='100%' vardisplay='flex' varpadding='120px 0 120px' varpaddingm='60px 0 60px'
     >
       <Suspense fallback={<div>Loading...</div>}>
-      <div className="biography-section">
-        {/* Sidebar menu */}
-        <div className="sidebar-menu">
-        <div className={styles.columnsAboveTitleCenter}>
-            <div className={styles.littleLine}/>
-            <div>
-              <p className={styles.AboveTitle}>
-              <FormattedMessage
-                id="biografia.title"
-                defaultMessage='titulo'
-              />
-            </p>
-            </div>
-          </div>
-          <RedHatDisplay
-          varfontsize = '40px'
-          varweight = '700'
-          varcolor = '#232E35'
-          varpadding ='0 0 85px'
-          fontsizemobile = '22px'
-          >
-            <FormattedMessage id='biografia.subtitle' defaultMessage='subtitulo' />
-          </RedHatDisplay>
-          {Object.keys(sections).map(section => (
-          <button 
-          key={section} 
-          onClick={() => setSelectedSection(section)}
-          className={`menu-item ${selectedSection === section ? 'active' : ''}`}
-          >
-            {sections[section].icon}
-            <FormattedMessage id={sections[section].title} defaultMessage='titulo de seccion' />
-            <ChevronRight className='angle' />
-          </button>
-          ))}
-        </div>
-
-      {/* Content area */}
-      <div className="content-area">
-         {/* Flechas para cambiar secciones en móvil */}
-         {isMobile && (
-          <ContentBox
-          vardisplay='flex'
-          varwidth = '100%'
-          varpadding = '0 0 30px'
-          >
-            <ContentBox>
-              <div className={styles.columnsAboveTitleCenter}>
-                <div className={styles.littleLine}/>
-                <div>
-                  <p className={styles.AboveTitle}>
+        <div className="biography-section">
+          {/* Sidebar menu */}
+          <div className="sidebar-menu">
+            <div className={styles.columnsAboveTitleCenter}>
+              <div className={styles.littleLine} />
+              <div>
+                <p className={styles.AboveTitle}>
                   <FormattedMessage
                     id="biografia.title"
+                    defaultMessage='titulo'
                   />
                 </p>
-                </div>
               </div>
-              <RedHatDisplay
-              varfontsize = '40px'
-              varweight = '700'
-              varcolor = '#232E35'
-              varpadding ='0 0 25px'
-              fontsizemobile = '22px'
-              >
-                <FormattedMessage id='biografia.subtitle' defaultMessage='subtitulo' />
-              </RedHatDisplay>
-            </ContentBox>
-
-            <Gridwrapper vargridtemplatecolumns='20% 40% 20%' justifyContent ='space-between' varwidth='96%'>
-              <Griditem>
-                <Btn onClick={handlePrevSection} className="prev-button" varpadding = '5px 9px' aria-label="Anterior">
-                  <ChevronLeft aria-hidden="true" />
-                </Btn>
-              </Griditem>
-              <Griditem>
-              <RedHatDisplay varfontsize='18px' varweight='500' varcolor='#585DCC' ><FormattedMessage id={sections[selectedSection].title} /></RedHatDisplay>
-
-              </Griditem>
-              <Griditem vardisplay='flex' alignItems = 'flex-end'>
-                <Btn onClick={handleNextSection} className="next-button" varpadding = '5px 9px' aria-label="Siguiente">
-                  <ChevronRight aria-hidden="true"/>
-                </Btn>
-              </Griditem>
-            </Gridwrapper>
-            </ContentBox>
-          )}
-        <div className="content-box">
-          <div className='image-gallery'>
-          {sections[selectedSection]?.images?.map((imgSrc, index) => (
-            <img src={imgSrc} alt={`section-${selectedSection}-image-${index}`} key={index} loading='lazy' />
-          ))}
-          </div>
-          {selectedSection === 'conclusiones' ? (
-            sections.conclusiones.contents.map((paragraph, index) => (
-              <div key={index} className="paragraph-container">
-                <Roboto varfontsize='16px' varcolor='#595959' varweight='400' vartextalign='left' varlineheight='1.5em' varfontsizemobile ='13px'>
-                  <FormattedMessage id={paragraph} defaultMessage='contenido' />
-                </Roboto>
-                <Btn onClick={() => copyToClipboard(paragraph)} className="copy-button" vargridgap ='10px' varcolor='#2A2FAB' varweight ='400' backgcolor='#f0f0f000' varpadding= '10px 48px' varfontsizemobile = '12px' smpadd = '6px 12px' vardropshadowmobile='none' varmargin='7px 0 0 auto'><Download className='icondownload'/> Copiar</Btn>
-              </div>
-            ))
-          ) : (
-            <Roboto
-              varfontsize='16px'
-              varcolor='#595959'
-              varweight='400'
-              vartextalign='left'
-              varlineheight='1.5em'
-              varfontsizemobile ='16px'
+            </div>
+            <RedHatDisplay
+              varfontsize='40px'
+              varweight='700'
+              varcolor='#232E35'
+              varpadding='0 0 85px'
+              fontsizemobile='22px'
             >
-              <FormattedMessage 
-                id={sections[selectedSection].content}
-                values={{
-                  br: <br />,
-                }}
-                defaultMessage='contents'
-              />
-            </Roboto>
-          )}
+              <FormattedMessage id='biografia.subtitle' defaultMessage='subtitulo' />
+            </RedHatDisplay>
+            {Object.keys(sections).map(section => (
+              <button
+                key={section}
+                onClick={() => setSelectedSection(section)}
+                className={`menu-item ${selectedSection === section ? 'active' : ''}`}
+              >
+                {sections[section].icon}
+                <FormattedMessage id={sections[section].title} defaultMessage='titulo de seccion' />
+                <ChevronRight className='angle' />
+              </button>
+            ))}
+          </div>
+
+          {/* Content area */}
+          <div className="content-area">
+            {/* Flechas para cambiar secciones en móvil */}
+            {isMobile && (
+              <ContentBox
+                vardisplay='flex'
+                varwidth='100%'
+                varpadding='0 0 30px'
+              >
+                <ContentBox>
+                  <div className={styles.columnsAboveTitleCenter}>
+                    <div className={styles.littleLine} />
+                    <div>
+                      <p className={styles.AboveTitle}>
+                        <FormattedMessage
+                          id="biografia.title"
+                        />
+                      </p>
+                    </div>
+                  </div>
+                  <RedHatDisplay
+                    varfontsize='40px'
+                    varweight='700'
+                    varcolor='#232E35'
+                    varpadding='0 0 25px'
+                    fontsizemobile='22px'
+                  >
+                    <FormattedMessage id='biografia.subtitle' defaultMessage='subtitulo' />
+                  </RedHatDisplay>
+                </ContentBox>
+
+                <Gridwrapper vargridtemplatecolumns='20% 40% 20%' justifyContent='space-between' varwidth='96%'>
+                  <Griditem>
+                    <Btn onClick={handlePrevSection} className="prev-button" varpadding='5px 9px' aria-label="Anterior">
+                      <ChevronLeft aria-hidden="true" />
+                    </Btn>
+                  </Griditem>
+                  <Griditem>
+                    <RedHatDisplay varfontsize='18px' varweight='500' varcolor='#585DCC' ><FormattedMessage id={sections[selectedSection].title} /></RedHatDisplay>
+
+                  </Griditem>
+                  <Griditem vardisplay='flex' alignItems='flex-end'>
+                    <Btn onClick={handleNextSection} className="next-button" varpadding='5px 9px' aria-label="Siguiente">
+                      <ChevronRight aria-hidden="true" />
+                    </Btn>
+                  </Griditem>
+                </Gridwrapper>
+              </ContentBox>
+            )}
+            <div className="content-box">
+              <div className='image-gallery'>
+                {sections[selectedSection]?.images?.map((imgSrc, index) => (
+                  <img src={imgSrc} alt={`section-${selectedSection}-image-${index}`} key={index} loading='lazy' />
+                ))}
+              </div>
+              {selectedSection === 'conclusiones' ? (
+                sections.conclusiones.contents.map((paragraph, index) => (
+                  <div key={index} className="paragraph-container">
+                    <Roboto varfontsize='16px' varcolor='#595959' varweight='400' vartextalign='left' varlineheight='1.5em' varfontsizemobile='13px'>
+                      <FormattedMessage id={paragraph} defaultMessage='contenido' />
+                    </Roboto>
+                    <Btn onClick={() => copyToClipboard(paragraph)} className="copy-button" vargridgap='10px' varcolor='#2A2FAB' varweight='400' backgcolor='#f0f0f000' varpadding='10px 48px' varfontsizemobile='12px' smpadd='6px 12px' vardropshadowmobile='none' varmargin='7px 0 0 auto'><Download className='icondownload' /> Copiar</Btn>
+                  </div>
+                ))
+              ) : (
+                <Roboto
+                  varfontsize='16px'
+                  varcolor='#595959'
+                  varweight='400'
+                  vartextalign='left'
+                  varlineheight='1.5em'
+                  varfontsizemobile='16px'
+                >
+                  <FormattedMessage
+                    id={sections[selectedSection].content}
+                    values={{
+                      br: <br />,
+                    }}
+                    defaultMessage='contents'
+                  />
+                </Roboto>
+              )}
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    </Suspense>
+      </Suspense>
     </ContentBox>
   );
 };

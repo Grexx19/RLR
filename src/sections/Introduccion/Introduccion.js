@@ -1,18 +1,16 @@
 import React, { useEffect, useState } from 'react';
-
+import { FormattedMessage } from 'react-intl';
 import styles from "../../components/Styled.module.scss";
 import stylesIntroduction from "./Introduccion.module.scss";
 import { ContentBox, ImagePicture, RedHatDisplay } from '../../components/Styled';
 
 const Introduccion = () => {
-let id = require('../../assets/img/Ingenieria_Digital_by_Ricardo_Lopez.webp');
-let superleads = require('../../assets/img/SuperLeads_by_Ricardo_Lopez.webp');
-let int = require('../../assets/img/INT_by_Ricardo_Lopez.webp');
-let rlrmovil = require('../../assets/img/rlrmovil.webp');
+  let id = require('../../assets/img/Ingenieria_Digital_by_Ricardo_Lopez.webp');
+  let superleads = require('../../assets/img/SuperLeads_by_Ricardo_Lopez.webp');
+  let int = require('../../assets/img/INT_by_Ricardo_Lopez.webp');
+  let rlrmovil = require('../../assets/img/rlrmovil.webp');
 
-const FormattedMessage = React.lazy(() => import('react-intl').then(module => ({ default: module.FormattedMessage })));
-
-const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -33,29 +31,29 @@ const [isMobile, setIsMobile] = useState(false);
   }, []);
 
   // Definir el fondo solo si no es móvil
-  const backgroundImage = !isMobile 
+  const backgroundImage = !isMobile
     ? { backgroundImage: `url(${require('../../assets/img/Ricardo_Lopez_Rayero_Introduccion.webp')})` }
     : { backgroundColor: '#020926' };  // Color de fondo para móviles
 
 
   return (
     <div className={stylesIntroduction.introduccionSection} style={backgroundImage}>
-        <ContentBox
-        varmaxwidth= '1248px'
-        varwidth= '100%'
-        varpadding = '0 0 27px'
-        vardisplaymovil = 'flex'
-        >
-          <div className={stylesIntroduction.container}>
+      <ContentBox
+        varmaxwidth='1248px'
+        varwidth='100%'
+        varpadding='60px 0 27px'
+        vardisplaymovil='flex'
+      >
+        <div className={stylesIntroduction.container}>
           <div className={styles.columnsAboveTitle}>
-            <div className={styles.littleLine}/>
+            <div className={styles.littleLine} />
             <div>
               <p className={styles.AboveTitleP}>
-              <FormattedMessage
-                id="introduction.nameis"
-                defaultMessage='Mi nombre es'
-              />
-            </p>
+                <FormattedMessage
+                  id="introduction.nameis"
+                  defaultMessage='Mi nombre es'
+                />
+              </p>
             </div>
           </div>
           <div>
@@ -65,19 +63,17 @@ const [isMobile, setIsMobile] = useState(false);
                 defaultMessage='Ricardo Lopez Reyero'
               />
             </p>
-            
+
             <p className={styles.textSans}>
               <FormattedMessage
                 id="introduction.abovetitle"
-                defaultMessage="<p style={{ whiteSpace: 'pre-line' }}><strong>Ingeniero  |  Consultor digital  |  INT lover</strong></p>"
-                values={{ p: (chunks) => <p>{chunks}</p> }}
-                
+                defaultMessage='Ingeniero | Consultor digital | INT lover'
               />
             </p>
             <ContentBox
-            vardisplaymovil = 'block'
-            vardisplay = 'none'
-            varmargin = '19px 0 0'
+              vardisplaymovil='block'
+              vardisplay='none'
+              varmargin='19px 0 0'
             >
               <ImagePicture src={rlrmovil} varwidth='450px' varmaxwidth='100%' alt='ricardo_lopez_reyero' loading='lazy' />
             </ContentBox>
@@ -98,29 +94,29 @@ const [isMobile, setIsMobile] = useState(false);
           </div>
           <div className={stylesIntroduction.contentProyectos}>
             <a href='https://ingenieriadigital.mx'>
-              <img src={id} alt="IngenieriaDigital_RicardoLopezRayero" className={stylesIntroduction.imgID} loading='lazy'/>
-              <RedHatDisplay varcolor = 'white' varfontsize = '13px' varpadding= '10px 0 0'>2019</RedHatDisplay>
+              <img src={id} alt="IngenieriaDigital_RicardoLopezRayero" className={stylesIntroduction.imgID} loading='lazy' />
+              <RedHatDisplay varcolor='white' varfontsize='13px' varpadding='10px 0 0'>2019</RedHatDisplay>
             </a>
             <a href='https://superleads.mx'>
-              <img src={superleads} alt="SuperLeads_RicardoLopezRayero" className={stylesIntroduction.imgSL} loading='lazy'/>
-              <RedHatDisplay varcolor = 'white' varfontsize = '13px' varpadding= '10px 0 0'>2022</RedHatDisplay>
+              <img src={superleads} alt="SuperLeads_RicardoLopezRayero" className={stylesIntroduction.imgSL} loading='lazy' />
+              <RedHatDisplay varcolor='white' varfontsize='13px' varpadding='10px 0 0'>2022</RedHatDisplay>
             </a>
             <a href='https://int.store'>
-              <img src={int} alt="Int_RicardoLopezRayero" className={stylesIntroduction.imgInt} loading='lazy'/>
-              <RedHatDisplay varcolor = 'white' varfontsize = '13px' varpadding= '10px 0 0'>2022</RedHatDisplay>
+              <img src={int} alt="Int_RicardoLopezRayero" className={stylesIntroduction.imgInt} loading='lazy' />
+              <RedHatDisplay varcolor='white' varfontsize='13px' varpadding='10px 0 0'>2022</RedHatDisplay>
             </a>
           </div>
           <RedHatDisplay
-            varfontsize = '12.26px'
-            varcolor = '#fff'
-            vartextalign = 'left'
-            varpadding = '48px 0 30px'
+            varfontsize='12.26px'
+            varcolor='#fff'
+            vartextalign='left'
+            varpadding='48px 0 30px'
           >
-            <FormattedMessage id='introduction.updated' defaultMessage='ultima actualizacion'/>
+            <FormattedMessage id='introduction.updated' defaultMessage='ultima actualizacion' />
           </RedHatDisplay>
-          </div>
-        </ContentBox>
-        
+        </div>
+      </ContentBox>
+
     </div>
   );
 };

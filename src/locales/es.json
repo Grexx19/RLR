@@ -1,40 +1,29 @@
 {
     "language.spanish": "Español",
     "language.english": "Spanish",
-  
     "header.download": "Descargas",
     "header.button": "Contacto",
-   
     "introduction.nameis": "MI NOMBRE ES",
     "introduction.name": "Ricardo Lopéz Reyero",
-    "introduction.abovetitle": "Ingeniero  |  Consultor digital  |  INT lover",
-    "introduction.description.contenido": "Soy un Ingeniero Industrial enfocado en la mejora de los procesos relacionados a la venta digital. Desde la comunicación instantánea con los prospectos hasta el pago del producto ó servicio.",
+    "introduction.abovetitle": "Ingeniero  |  Experto en Admisiones  |  Crypto",
+    "introduction.description.contenido": "Me gusta hacer que las cosas funcionen fácil. Donde otros ven ‘así siempre se ha hecho’, yo veo pasos de más, tareas repetidas y oportunidades para automatizar. Hoy estoy enfocado en procesos de escuelas, pero en el fondo hago lo mismo: convertir desorden en un sistema ágil que ahorra tiempo y mejora resultados",
     "introduction.updated": "Última actualización: Septiembre 2024",
-
-    "biografia.title":"BIOGRAFIA",
-    "biografia.subtitle":"Vida",
-  
+    "biografia.title": "BIOGRAFIA",
+    "biografia.subtitle": "Vida",
     "biografia.inicios.title": "Inicios",
     "biografia.inicios.contenido": "Soy el hijo mayor, tengo un hermano Mariano y una hermana Dolores. Soy Montessori por que de pequeño me diagnosticaron Hiperactividad avanzada y solo me aceptaron en ese colegio (afortunadamente) amo como trabaja mi mente, ve soluciones donde los demás ven problemas, alcanzo a ver diferentes ángulos del problema y de la solución al mismo tiempo. Desde que tengo uso de razón sabía dos cosas, que quería ser ingeniero y quería abundancia económica, por que veía a mis papás esforzándose mucho por el dinero y por más que trabajaban los dos por sacarnos adelante no fluía lo suficiente, veía el empeño y sentía la desesperación. Sin embargo, nunca nos falto de comer, ni estudio, ni palabras de ánimo.{br}{br} En la secundaria por falta de recursos entre a la Pereyra cuando todos mís amigos entraron al Colegio Inglés, fue una mala época en mí vida, sufrí bullying. Era el diferente en la secundaria, el aplicado, el listo y no encajaba para nada. {br}{br}Después a mí padres les empezó ir muy bien y entre a la prepa entre al Tec del Monterrey. Ahí encontré mi amor por la tecnología, mí papá me compró una laptop IBM negra preciosa, con la cual me divertí mucho, era capaz de entrar al servidor del colegio y cambiar los fondos de pantalla de todas las computadoras del campus al mismo tiempo con lo cual me divertía bastante, también mandaba archivos y tomaba el control de las computadoras que quería, les quitaba y ponía archivos, sacaba el CD, entre otras cosas, pero me excedí en la cantidad de faltas en las clases y me cambiaron de preparatoria al Colegio Los Ángeles. {br}{br} En la prepa recuerdo que la maestra de religión me dijo Ricardo ya no vengas a clase por que nos haces dudar a todos incluso a mí y tienes 90 de calificación cosa que feliz acepte. También recuerdo que un profesor de matemáticas por alguna razón la agarró contra mí y me saco durante semanas de clase pero siempre tenía que ir a presentar exámenes los viernes de todo lo explicado en la semana que los contestaba por pura lógica, siempre tenía 100 perfecto hasta que el profesor se relajo conmigo y pude volver entrar a su clase. {br}{br} Recuerdo que todos los veranos trabajé por que mis papas me querían enseñar a trabajar, cosa que hicieron muy bien, hoy trabajo por gusto, con disiplica y con pasión. {br}{br}Soy muy afortunado en la época de paz que nací, en el lugar Torreón, México, un lugar de emprendedores y con grandes empresarios, un lugar callado en el que pudiera pensar y reflexionar. Agradecido de los amigos y familia que escogí.",
-  
     "biografia.universidad.title": "Universidad",
     "biografia.universidad.contenido": "En universidad volví entrar al Tec de Monterrey con la carrera de Ingeniero Físico Industrial, por que sabía que me tenía que ir a Monterrey a terminarla cosa que deseaba con todas mis fuerzas, dos años después de entrar al Tec me fuí a estudiar un año de inglés a Brampton, Canadá, padrísima época, estudie inglés un tiempo y luego trabajé en construcción los últimos meses, aquí experimente ganar más de lo que  podías gastar, no tenía tiempo pero tenía dinero. {br}{br}De regreso a México me fuí a la ciudad de Monterrey a seguir con la universidad pero estando ahí me di cuenta que necesitaba cambiarme de carrera para poder disfrutar más de la fiesta de la ciudad cosa que hice y me cambie a Ingeniero Industrial y de Sistemas, aquí me compre una laptop Mac que casi la tiro de la desesperación de lo diferente que era pero a los 15 días la amaba y pensaba por que no la había conocido antes, con esto aprendí que lo que conoces no siempre es lo mejor y las costumbres pueden ser peligrosas. Amé estudiar ahí, conocías gente súper interesante de todas partes de México, las clases eran retadoras y me hacían estudiar y esforzarme, salí con 90 de promedio y buenas relaciones.",
-  
     "biografia.primerostrabajos.title": "Primeros Trabajos",
     "biografia.primerostrabajos.content": "Regrese a Torreón a terminar la carrera y empezar a trabajar con mi papá en los seguros. Duré 18 meses en los seguros haciendo un proyecto SegurosDeMexico.com muy adelantado a su epoca unos 3 años antes de lo correcto y lo dejamos caer por que no existía la tecnología correcta, los seguros no eran lo mío y los proveedores que teníamos no daban de sí, aprendí que el timing y los proveedores correctos son sumamente importantes. {br}{br} De ahí me pase a organizar, fiestas masivas, conciertos, abrir antros y restaurantes, en total organice 6 fiestas masivas con más de 2000 personas cada una, tuve 3 antros, 4 restaurantes, 2 conciertos y un festival de música electrónica en Los Cabos, en esta etapa aprendí los ciclos de vida de los negocios y que la recurrencia de los clientes importa mucho para poder crecer y avanzar en la vida. {br}{br} Después teniendo restaurantes a mis 30 pero no siendo feliz le pregunte a mí novia en ese entonces hoy esposa ¿Qué hago con mí vida? no soy feliz, no avanzo y no veo la luz, la respuesta fue elegante y sencilla a la vez: Todo mundo te pide consejos de tecnología y les ayudas con gusto y gratis, solo quita el gratis. Fue un momento clave en mí vida de ahí todo empezó a fluir. {br}{br} Fundamos IngenieriaDigital.mx en Septiembre del 2019",
-  
     "biografia.ingenieriaDigital.title": "IngenieriaDigital.mx",
     "biografia.ingenieriaDigital.content": "Iniciamos IngenieriaDigital.mx en el 2019 y las cosas empezaron a moverse, los clientes y las contrataciones llegaban poco a poco, todos los días aprendiamos algo nuevo, de diseño UI/UX, programación front/back y marketing/comunicación efectiva, mucho estrés, poco dinero y mucho aprendizaje. {br}{br} Todo el tiempo estamos mejorando los procesos con lo que hacemos las cosas para ser más eficientes los tiempos y mejorar las ventas de nuestros clientes. Hemos tenido clientes que nos dicen apaguen la publicidad hasta que termine de construir las nuevas bodegas por que estaba completamente llena y con lista de espera. Nos llena de satisfacción ver a clientes con páginas elegantes que les generan ventas y prospectos. {br}{br} Todo el tiempo estamos buscando y probando softwares para poder recomendarles a nuestros cliente y para nosotros volveremos más eficientes. Usamos el mejor Software que hay en el mercado así que nos considero súper eficientes en todos los sentidos. {br}{br} Una de las razones por la que le agregamos la leyenda de Consultores Digitales es por que tratamos de ver todo el funnel de ventas desde inicio hasta final y llenamos los huecos que tenemos con los top proveedores que hemos podido encontrar, esto asegura la máxima probabilidad de éxito en el proyecto y  acelera la forma de iterar para mejorar los resultados. Hasta que un día vimos el hoyo que siempre habíamos estado buscando y empezó SuperLeads",
-  
     "biografia.superLeads.title": "SuperLeads.mx",
     "biografia.superLeads.content": "SuperLeads.mx nace por que la comunicación de las empresas con los prospectos era sumamente lenta e ineficiente, así que creamos el primer módulo de comunicación en el que comunicamos al instante el prospecto correcto con el asesor optimo al instante, pero la idea fue creciendo a pasos acelerados por que el sistema de módulos podía agregar mucho valor a la vida de las personas y por eso le dimos independencia y dejamos SuperLeads.mx para el nicho educativo. {br}{br} Sin darnos cuenta llevábamos el marketing de varios colegios, por que es un sector que siempre tiene que estar prospectando, así que decidimos especializarnos en el nicho y automatizar tanto como se pudiera la comunicación y recepción de prospectos para incrementar la tasa de inscritos. Empezamos a documentar todo y crear software, con resultados muy buenos, medibles y escalables para los colegios privados, empezamos a hacer alianzas para entrar más en el nicho. {br}{br} Continuará...",
-    
     "biografia.int.title": "INT.Store",
     "biografia.int.content": "INT empezó en SuperLeads.mx pero fue creciendo tanto la idea que el nombre le empezó a quedar pequeño y el 2023 decidimos independizar los proyectos. {br}{br} El Sistema INT y la Moneda INT nacen de la necesidad de poder abrir un negocio completo en minutos, para con esto armar a las personas y puedan crear flujos económicos a sus vidas, como es un sistema modular cada quién usa lo que necesita, todo es instantáneo, todo esta enfocado en agregar el máximo valor posible a las personas al menor costo posible. {br}{br} Al minuto 1 de haber creado la cuenta puedes empezar a recibir pagos de todo el mundo y en el minuto 6 puedes tener una tienda completa con productos cargados, al minuto 33 puedes tener listo un chatbot con inteligencia artificial contestando las preguntas frecuentes de tus prospectos ó clientes. {br}{br} Puedes disponer de las INT’s que te lleguen a los 0 segundos y con 0% comisión por enviar / recibir, esto lo hicimos para que el flujo se mueva a la mayor velocidad posible y sin complicaciones. Para enviar INT’s solo tecleas el nombre del negocio a donde quieres mandarlas y las mandas, sencillo y rápido. {br}{br} Venimos a este mundo a mejorarlo tanto como sea posible y nuestra manera de hacerlo es armando a las personas para creen abundancia en sus vidas con INT.",
-  
     "biografia.vida.title": "Vida personal",
     "biografia.vida.content": "En el tema de familia, estoy casado con una mujer sorprendete, que admiro y amo, Ana Acosta creyó en mí antes de que yo lo hiciera, me ha ido guíando y apoyando desde el primer día, es una empresaria exitosa, una hija amorosa, una hermana que siempre esta cuando la necesitan y una madre ejemplar, es imposible hacer y lograr lo que estamos haciendo y logrando sin ella, ha sido pieza clave en SuperLeads, fue la primera inversionista angel y no ha parado apoyar el proyecto. {br}{br} Tuve una hermosa hija Galia López Acosta el 27 de septiembre del 2021, me ha hecho conocer un amor que no sabía que existía, me ha dado visión a largo plazo y me ha inspirado enormemente en el trabajo, gracias a ella me metí a invertigar de crypto por que no me podía ver dandole pesos mexicanos sin valor en 18 años para salir con sus amigas. {br}{br} Hace unos meses le detectaron Leucomalasia periventricular y Hemiparesia Eipastica a mí hija, que en pocas palabras son unas cicatrices que tiene en el cerebrero por que durante un momento del embarazo no le llego suficiente sangre al cerebro y este formo unas cicatrices exactamente donde estan las funciones del lenguaje y la motricidad. En estos momentos estamos haciendo todo lo posible por que tenga los mejores tratamientos y tenga la mejor vida posible. Estamos pasando por una epoca de incertidumbre y tristeza que esperemos eventualemente saber el ¿Para que a nosotros?",
-  
     "biografia.conclusiones.title": "Conclusiones",
     "biografia.conclusiones.con1": "Venimos a mejorar la vida de las persona, somos CoCreadores y nuestra responsabilidad es dejar este mundo mejor que de cómo lo encontramos, es necesario que encuentres tú propósito para poder lograr mejorar tanto como se pueda la vida de las personas.",
     "biografia.conclusiones.con2": "El objetivo de tus acciones no debe estar basado en ganar dinero, debe de estar basado en mejorar vidas y por consecuencia ganar dinero. Jamás al revés.",
@@ -65,14 +54,11 @@
     "biografia.conclusiones.con27": "No hay nada ni bueno ni malo las cosas que pasan son neutras, tú le pones el sentido a lo ocurrido, positivo ó negativo.",
     "biografia.conclusiones.con28": "Es más fácil avanzar en la vida si vas curando las heridas conforme van pasando y sanando el pasado constantemente. ",
     "biografia.conclusiones.con29": "Activos importantes para las personas en el orden correcto. Un deseo intenso (Propósito), tú imaginación, tus pensamientos (conversaciones internas), Fe, Perseverancia, sexto sentido, colaboradores, tiempo, dinero.",
-   
     "biografia.conclusiones.frasesimportantes.title": "Frases importantes:",
     "biografia.conclusiones.frasesimportantes.primerfrase": "El día que descubres que puedes mejorar tu entorno creando, nada vuelve a ser igual. Steve Jobs",
     "biografia.conclusiones.frasesimportantes.segundafrase": "La imaginación es más importante que la ciencia. Albert Einstein",
     "biografia.conclusiones.frasesimportantes.tercerafrase": "Cristo en tí es tu imaginación. Neville Goddard",
-  
     "biografia.conclusiones.copy": "Copiar",
-  
     "eventos_int.title": "SINCRONICIDADES",
     "eventos_int.subtitle": "Eventos importantes para INT",
     "eventos_int.container1": "Mi abuelo Ricardo López Fuentes me abrió una inversión creciente en Banamex, un banco mexicano, cuando yo acababa de nacer. <strong>Invertió $800,000 MXN</strong> en 1986. 36 años después, con intereses compuestos en el banco menos comisiones, <strong>me dieron como $800 MXN</strong>. Esto me enseñó claramente que <strong>el negocio del banco no es hacer ricos a sus clientes, es hacer ricos a sus dueños con el dinero de sus clientes.</strong>",
@@ -80,73 +66,53 @@
     "eventos_int.container3": "En 2010, Banamex me otorgó un préstamo para abrir un restaurante. El restaurante no funcionó y me quedé con la deuda. No pude pagarla porque simplemente no había manera. Terminé en el buró de crédito, lo que complicó aún más las cosas. Esto me enseñó que el sistema no está diseñado para que las personas inicien negocios, creen empleos y mejoren la sociedad. <strong>A pesar del sistema, debes luchar para lograr lo que quieres</strong>.",
     "eventos_int.container4": "En 2022, después de una larga pandemia, tenía 2 tarjetas de crédito al tope más un <strong>crédito con Santander con tasas entre el 60% y el 35% anual.</strong> Si bien podía pagar capital, los intereses me estaban comiendo. Me acerqué para <strong>reestructurar la deuda para reducir la cantidad de intereses, pero la respuesta fue un rotundo NO</strong>. Afortunadamente, mi esposa tenía un crédito a una tasa muy alta, pero menor que la mía, y con esto reestructuramos la deuda. <strong>Aprendí que al banco no le importa que le pidas dinero para pagarle a él mismo; prefiere ahogarte en intereses antes de ayudarte.</strong>",
     "eventos_int.frase": "Nace INT para empoderar a los emprendedores a crear y a crecer. ",
-
     "proposito.title": "PRÓPOSITO",
     "proposito.subtitle": "Próposito en la vida",
     "proposito.subtitle2": "Ayudar a 1,000 millones de personas a vender más",
     "proposito.frase": "Imaginemos un mundo lleno de abundancia y salgamos a crearlo",
     "proposito.autor": "- Ricardo López Reyero",
-  
     "estudios.title": "ACERCA DE MI",
     "estudios.subtitle": "Mis estudios",
-  
-    "libros.title":"ACERCA DE MI",
-    "libros.subtitle":"Libros que me han mejorado",
-    "libros.button":"Descargar Lista libros completa con recomendados HD",
-  
+    "libros.title": "ACERCA DE MI",
+    "libros.subtitle": "Libros que me han mejorado",
+    "libros.button": "Descargar Lista libros completa con recomendados HD",
     "documentales.title": "VIDEOS IMPORTANTES",
     "documentales.subtitle": "Documentales que impactaron",
     "documentales.blueprint": "Bob Proctor's BluePrint {br}For Success",
     "documentales.born": "You Were {br}Born Rich",
     "documentales.millionaire": "You can become a {br}millionaire",
     "documentales.living": "Living From a Place of Surrender ",
-  
     "musica.title": "ACERCA DE MI",
     "musica.subtitle": "Música favorita",
     "musica.beethoven": "Beethoven",
     "musica.tdreams": "Tulum Dreams",
     "musica.acdc": "AC/DC",
-  
     "galeria.title": "GALERIA",
     "galeria.subtitle": "Momentos importantes",
-  
     "garantia.content": "Entre más estudio más me doy cuenta que hay nivelesde conciencia y veo muchísimos niveles hacia arriba, me emociona ver hasta cual alcanzo a llegar.",
     "garantia.autor": "-Ricardo López Reyero",
-  
     "bottom.text": "Más informacion en:",
-  
     "footer.derechos": "2022. Todos los derechos reservados. {link2}",
     "footer.visitante": "Visitante: XXX",
     "footer.madeby": "Hecho por {link}.",
-  
     "common.welcome": "¡Bienvenido!",
     "common.intro": "Este es un ejemplo utilizando react-intl.",
-
     "downloads.hero.aboutTitle": "SECCIÓN DE",
     "downloads.hero.title": "Descargas",
     "downloads.hero.description": "Algunas cosas que he ido encontrando que creo que vale mucho la pena todos las tengan, en orden de importancia. ",
-
     "downloads.cards.title": "Tarjetas objetivos",
     "downloads.cards.btncard": "Descargar HD",
-
     "downloads.books.title": "Libros leídos",
     "downloads.books.description": "Descarga toda la lista de libros leídos y mis mejores recomendaciones, aquí puede estar tu siguiente gran libro. ",
     "downloads.books.btnbooks": "Descargar y ver",
-
-    "downloads.marcas.title": "Marcas",
+    "downloads.marcas.title": "Escritos",
     "downloads.marcas.btn": "Descargar",
-
     "downloads.atajos.title": "Atajos para la abundancia",
-
     "downloads.audios.title": "Audios",
-
     "downloads.videos.title": "Videos",
-
     "downloads.cuadros.title": "Cuadros Explicativos",
     "downloads.cuadros.btndescarga": "Descarga cuadros HD",
-
     "downloads.habladores.title": "Habladores",
     "downloads.habladores.btn": "Descargar HD",
-
     "downloads.bottom.frase": "Si esta página te ayudo en algo {br}Lo mejor que puedes hacer es compartirla a tú gente querida"
 }
